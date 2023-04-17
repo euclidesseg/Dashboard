@@ -1,5 +1,6 @@
 import { Component, Inject, OnInit } from "@angular/core";
 import { DOCUMENT } from "@angular/common";
+import { SharedService } from "../services/shared.service";
 
 @Component({
     selector: 'app-sidebar',
@@ -11,10 +12,12 @@ export class SidebarComponent implements OnInit {
     darkModeSelect: boolean = false
     mode = 'Dark Mode'
 
-    constructor
-        // esta injeccion la uso para obtener una referencia al DOM del body y asi asignarle o removele 
-        // una clase su uso se ve estableciso en el metodo darkMode
-        (@Inject(DOCUMENT) private document: Document) { }
+    // esta injeccion la uso para obtener una referencia al DOM del body y asi asignarle o removele 
+    // una clase su uso se ve estableciso en el metodo darkMode
+    constructor(
+        private sharedService: SharedService
+    ) { }
+
 
     ngOnInit(): void {
         window.addEventListener('resize', () => {
@@ -27,25 +30,19 @@ export class SidebarComponent implements OnInit {
         });
     }
 
-    closeOpen() {
-        this.close = !this.close
+    openOrCloseSidebar() {
+        this.close = this.sharedService.openClose()
     }
     oppenWithSearch() {
         if (this.close == true) {
-            this.closeOpen()
+            this.openOrCloseSidebar()
         } else {
             return
         }
     }
     darkMode() {
-        this.darkModeSelect = !this.darkModeSelect
-        if (this.darkModeSelect == true) {
-            this.mode = "Ligth Mode"
-            this.document.body.classList.add('vela__blue')
-        } else {
-            this.mode = 'Dark Mode'
-            this.document.body.classList.remove('vela__blue')
-        }
-
+        const modeObject = this.sharedService.selecDarkMode();
+        this.darkModeSelect = modeObject.isActive;
+        this.mode = modeObject.modeText;
     }
 }

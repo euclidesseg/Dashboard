@@ -1,17 +1,23 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { AboutMeComponent } from "./briefcase/pages/about-me/about-me.component";
 
-const routes:Routes = [
-
-]
+const routes: Routes =
+    [
+        {
+            path: '',
+            component: AboutMeComponent,
+            pathMatch: "full"
+        }
+    ]
 @NgModule({
-    imports:[
+    imports: [
         RouterModule.forRoot(routes)
     ],
-    exports:[
+    exports: [
         RouterModule
     ]
 })
-export class AppRoutingModule{
-    
+export class AppRoutingModule {
+
 }

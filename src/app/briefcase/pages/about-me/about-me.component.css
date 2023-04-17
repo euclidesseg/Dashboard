@@ -1,0 +1,36 @@
+.about__me {
+    height: 800px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--sidebar-color);
+    overflow-y: auto;
+}
+
+.about__me .container {
+    height: 500px;
+    width: 50%;
+    background-color: tomato;
+}
+
+.about__me .img__perfil {
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.about__me div .img {
+    height: 500px;
+    width: 500px;
+}
+
+@media(max-width: 900px) {
+    .about__me {
+        flex-direction: row;
+    }
+
+    .about__me .container {
+        width: 100%;
+    }
+}

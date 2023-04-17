@@ -1,49 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-    font-family: 'popping', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  font-family: 'popping', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:root{
-    /* Colors */
-    --bodi-color: #e4e9f7;
-    --sidebar-color: #ffff;
-    --primary-color: #695cfe;
-    --primary-color-ligth: #f6f5ff;
-    --toggle-color: #ddd;
-    --text-color: #707070;
 
-    /* transitions */
-    --trans-03: all 0.2s ease;
-    --trans-03: all 0.3s ease;
-    --trans-04: all 0.4s ease;
-    --trans-05: all 0.5s ease;
-}
-:root{
-    --surface-a:#1f2d40;
-  --surface-b:#17212f;
-  --surface-c:rgba(255, 255, 255, 0.03);
-  --surface-d:#304562;
-  --surface-e:#1f2d40;
-  --surface-f:#1f2d40;
-  --text-color:rgba(255, 255, 255, 0.87);
-  --text-color-secondary:rgba(255, 255, 255, 0.6);
-  --primary-color:#64B5F6;
-  --primary-color-text:#212529;
-  --font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  --surface-0: #17212f;
-  --surface-50: #2e3744;
-  --surface-100: #454d59;
-  --surface-200: #5d646d;
-  --surface-300: #747a82;
-  --surface-400: #8b9097;
-  --surface-500: #a2a6ac;
-  --surface-600: #b9bcc1;
-  --surface-700: #d1d3d5;
-  --surface-800: #e8e9ea;
-  --surface-900: #ffffff;
-  --gray-50:#e8e9ea;
+:root {  
+  /* transitions */
+  --trans-03: all 0.2s ease;
+  --trans-03: all 0.3s ease;
+  --trans-04: all 0.4s ease;
+  --trans-05: all 0.5s ease;
+  /* Colors */
+  --primary-color-ligth: #f6f5ff;
+  --toggle-color: #ddd;
+  --bodi-color: #e4e9f7;
+  --sidebar-color: #ffff;
+  --text-color: #707070;
+  --surface-a: #1f2d40;
+  --surface-b: #17212f;
+  --surface-c: rgba(255, 255, 255, 0.03);
+  --surface-d: #304562;
+  --surface-e: #1f2d40;
+  --surface-f: #1f2d40;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --text-color-secondary: rgba(255, 255, 255, 0.6);
+  --primary-color: #64B5F6;
+  --primary-color-text: #212529;
+  --font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --gray-50: #e8e9ea;
   --gray-100: #d1d3d5;
   --gray-200: #b9bcc1;
   --gray-300: #a2a6ac;
@@ -53,84 +39,71 @@
   --gray-700: #454d59;
   --gray-800: #2e3744;
   --gray-900: #17212f;
-  --content-padding:1rem;
-  --inline-spacing:0.5rem;
-  --border-radius:3px;
-  --surface-ground:#17212f;
-  --surface-section:#17212f;
-  --surface-card:#1f2d40;
-  --surface-overlay:#1f2d40;
-  --surface-border:#304562;
 }
 
-body{
-    text-emphasis: 100vh;
-    background-color: var(--bodi-color);
-    transition: .5s;
+body {
+  text-emphasis: 100vh;
+  background-color: var(--bodi-color);
+  transition: .5s;
 }
-.vela__blue{
-    background-color: var(--surface-b);
-    transition: 0.5s;
+
+.vela__blue {
+  background-color: var(--surface-b);
+  transition: 0.5s;
 }
 
 ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #92929200;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #aaa9a900;
-    border-radius: 5px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-  
-  /* Estilos para scrollbar en Mozilla Firefox */
-  ::-moz-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  
-  ::-moz-scrollbar-track {
-    background: #adadad;
-  }
-  
-  ::-moz-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
-  }
-  
-  ::-moz-scrollbar-thumb:hover {
-    background: #555;
-  }
-  
-  /* Estilos para scrollbar en Microsoft Edge */
-  ::-ms-scrollbar {
-    width: 5px;
-    height: 5px;
-  }
-  
-  ::-ms-scrollbar-track {
-    background: #a9a9a9;
-  }
-  
-  ::-ms-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
-  }
-  
-  ::-ms-scrollbar-thumb:hover {
-    background: #555;
-  }
-  
-  
-  
-  
-  
-  
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e0e000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d3d1d100;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bab3b3;
+}
+
+/* Estilos para scrollbar en Mozilla Firefox */
+::-moz-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-moz-scrollbar-track {
+  background: #adadad;
+}
+
+::-moz-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Estilos para scrollbar en Microsoft Edge */
+::-ms-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-ms-scrollbar-track {
+  background: #a9a9a9;
+}
+
+::-ms-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-ms-scrollbar-thumb:hover {
+  background: #555;
+}

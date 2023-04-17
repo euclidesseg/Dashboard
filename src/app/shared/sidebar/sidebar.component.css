@@ -4,6 +4,7 @@
     margin-left: 10px;
     display: flex;
     align-items: center;
+    transition: var(--trans-05);
 }
 
 .sidebar .image {
@@ -27,6 +28,7 @@
     width: 250px;
     background-color: var(--sidebar-color);
     transition: 0.5s;
+    z-index: 100;
 }
 
 .sidebar .image-text {
@@ -164,7 +166,7 @@ li {
 }
 
 .sidebar .menu__bar {
-    /* height: calc(100% -50px); */
+    height: calc(100% -50px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -299,4 +301,33 @@ li {
 
 .closeNav li .mode__text {
     display: none;
+}
+
+.sidebar ~ .home {
+    position: fixed;
+    left: 250px;
+    height: 100%;
+    width: calc(100% - 90px);
+    transition: var(--trans-05);
+    padding: 0px 50px 0 50px;
+}
+
+.router__outlet {
+    height: 100%;    
+    padding: 10px 35px 10px 35px;
+    margin-right: 160px;
+    transition: var(--trans-05);
+}
+
+.closeNav ~ .home {
+    left: 75px;
+    width: calc(100% - 75px);
+}
+
+.closeNav ~ .home .router__outlet {
+    margin-right: -10px;
+    transition: var(--trans-05);
+}
+.vela__blue__sidebar ~ .home .router__outlet{
+    background-color: var(--surface-d);
 }

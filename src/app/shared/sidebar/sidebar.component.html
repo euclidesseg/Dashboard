@@ -3,14 +3,14 @@
     <header>
         <div class="image-text">
             <span class="image">
-                <img src="../../../assets/images/logo.png" alt="logo" class="image__logo">
+                <img src="../../../assets/images/img_perfil.png" alt="logo" class="image__logo">
             </span>
             <div class="text header-text">
                 <span class="name"> Euclides Perez</span>
                 <span class="profesion"> Developer </span>
             </div>
         </div>
-        <i class="toggle" (click)="closeOpen()">
+        <i class="toggle" (click)="openOrCloseSidebar()">
             <img src="../../../assets/images/menu.svg" alt="" class="toggle__image">
         </i>
     </header>
@@ -41,44 +41,6 @@
                     </a>
                 </li>
               
-                <li class="nav__link">
-                    <a href="#">
-                        <i class="pi pi-briefcase">
-                        </i>
-                        <span class="text nav__text">
-                            Trabajos
-                        </span>
-                    </a>
-                </li>
-              
-                <li class="nav__link">
-                    <a href="#">
-                        <i class="pi pi-briefcase">
-                        </i>
-                        <span class="text nav__text">
-                            Trabajos
-                        </span>
-                    </a>
-                </li>
-              
-                <li class="nav__link">
-                    <a href="#">
-                        <i class="pi pi-briefcase">
-                        </i>
-                        <span class="text nav__text">
-                            Trabajos
-                        </span>
-                    </a>
-                </li>
-                <li class="nav__link">
-                    <a href="#">
-                        <i class="pi pi-briefcase">
-                        </i>
-                        <span class="text nav__text">
-                            Trabajos
-                        </span>
-                    </a>
-                </li>
                 <li class="nav__link">
                     <a href="#">
                         <i class="pi pi-book">
@@ -136,3 +98,8 @@
         </div>
     </div>
 </nav>
+<section class="home">
+    <div class="router__outlet">
+        <router-outlet></router-outlet>
+    </div>
+</section>
