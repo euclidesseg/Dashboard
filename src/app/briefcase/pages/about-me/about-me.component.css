@@ -1,36 +1,50 @@
 .about__me {
     height: 800px;
-    min-height: 100vh;
+    max-height: 100vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--sidebar-color);
     overflow-y: auto;
 }
 
 .about__me .container {
-    height: 500px;
+    height: 100%;
     width: 50%;
-    background-color: tomato;
+    padding: 15px;
 }
 
+.about__me .container__texts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .about__me .img__perfil {
+    display: flex;
     justify-content: center;
-    background-color: aquamarine;
 }
 
 .about__me div .img {
-    height: 500px;
-    width: 500px;
+    display: flex;
+    height: 90%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px rgba(201, 188, 188, 0.5);
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
     .about__me {
         flex-direction: row;
+        transition: .5s;
     }
 
     .about__me .container {
         width: 100%;
+    }
+    .about__me .container__texts{
+        height: 70%;
+    }
+    .about__me .img__perfil{
+        height: 80%;
     }
 }

@@ -328,6 +328,3 @@ li {
     margin-right: -10px;
     transition: var(--trans-05);
 }
-.vela__blue__sidebar ~ .home .router__outlet{
-    background-color: var(--surface-d);
-}
