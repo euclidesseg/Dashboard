@@ -14,7 +14,6 @@ import { BriefcaseModule } from './briefcase/briefcase.module';
     BrowserModule,
     SharedModule,
     AppRoutingModule,
-    BriefcaseModule
   ],
   exports:[
     AppRoutingModule

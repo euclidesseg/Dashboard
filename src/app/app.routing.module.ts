@@ -5,8 +5,16 @@ import { AboutMeComponent } from "./briefcase/pages/about-me/about-me.component"
 const routes: Routes =
     [
         {
+            path:'auth',
+            loadChildren: () => import ('./auth/auth.module').then((module) => module.AuthModule)
+        },
+        {
+            path:'briefcase',
+            loadChildren: () => import ('./briefcase/briefcase.module').then( (module) => module.BriefcaseModule)
+        },
+        {
             path: '',
-            component: AboutMeComponent,
+            redirectTo:'briefcase',
             pathMatch: "full"
         }
     ]

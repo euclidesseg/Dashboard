@@ -4,17 +4,23 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { MyJobsComponent } from './pages/my-jobs/my-jobs.component';
 
 import { CardModule } from 'primeng/card';
+import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
+import { BriefCaseRoutingModule } from './briefcase-routing.module';
+import { SidebarComponent } from './pages/sidebar/sidebar.component';
 
 
 
 @NgModule({
   declarations: [
+    SidebarComponent,
     AboutMeComponent,
-    MyJobsComponent
+    MyJobsComponent,
+    LayoutPageComponent,
   ],
   imports: [
     CommonModule,
-    CardModule
+    CardModule,
+    BriefCaseRoutingModule
 
   ],
   exports:[

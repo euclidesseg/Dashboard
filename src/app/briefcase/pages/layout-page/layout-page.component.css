@@ -1,0 +1,15 @@
+.home {
+    position: fixed;
+    left: 250px;
+    height: 100%;
+    width: calc(100% - 90px);
+    transition: var(--trans-05);
+    padding: 0px 50px 0 50px;
+}
+
+.router__outlet {
+    height: 100%;    
+    padding: 10px 35px 10px 35px;
+    margin-right: 160px;
+    transition: var(--trans-05);
+}

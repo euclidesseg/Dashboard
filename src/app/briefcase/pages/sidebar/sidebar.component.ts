@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from "@angular/core";
 import { DOCUMENT } from "@angular/common";
-import { SharedService } from "../services/shared.service";
+import { SharedService } from "../../../shared/services/shared.service";
 
 @Component({
     selector: 'app-sidebar',
