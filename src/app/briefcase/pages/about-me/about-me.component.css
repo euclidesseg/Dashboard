@@ -27,7 +27,6 @@
 .about__me div .titles .text{
     font-size: 2rem;
     width: 100%;
-    
 }
 .about__me div .titles .text__like{
     color: var(--primary-color);
