@@ -1,14 +1,13 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { SidebarComponent } from "../briefcase/pages/sidebar/sidebar.component";
 import { SharedService} from "./services/shared.service";
-
-import { AppRoutingModule } from "../app.routing.module";
+import { Error404PageComponent } from './pages/error404-page/error404-page.component';
 
 
 @NgModule({
     declarations:[
-    ],
+         Error404PageComponent
+  ],
     imports:[
         CommonModule,
     ],

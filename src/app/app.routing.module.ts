@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { AboutMeComponent } from "./briefcase/pages/about-me/about-me.component";
+import { Error404PageComponent } from "./shared/pages/error404-page/error404-page.component";
 
 const routes: Routes =
     [
@@ -13,9 +13,17 @@ const routes: Routes =
             loadChildren: () => import ('./briefcase/briefcase.module').then( (module) => module.BriefcaseModule)
         },
         {
+            path: '404',
+            component:Error404PageComponent,
+        },
+        {
             path: '',
             redirectTo:'briefcase',
             pathMatch: "full"
+        },
+        {
+            path: '**',
+            redirectTo:'404'
         }
     ]
 @NgModule({

@@ -1,22 +1,23 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { MyJobsComponent } from "./pages/my-jobs/my-jobs.component";
-import { SidebarComponent } from "./pages/sidebar/sidebar.component";
 import { AboutMeComponent } from "./pages/about-me/about-me.component";
+import { LayoutPageComponent } from "./pages/layout-page/layout-page.component";
+import { MyJobsPageComponent } from "./pages/my-jobs-page/my-jobs-page.component";
+import { StudiesPageComponent } from "./pages/studies-page/studies-page.component";
+import { ExperiencePageComponent } from "./pages/experience-page/experience-page.component";
+import { MotivationsPageComponent } from "./pages/motivations-page/motivations-page.component";
 
 const routes: Routes = [
     {
         path:'',
-        component:SidebarComponent,
+        component:LayoutPageComponent,
         children:[
-            {
-                path:'about-me',
-                component:AboutMeComponent
-            },
-            {
-                path:'**',
-                redirectTo:'about-me', 
-            }
+            { path:'about-me',component:AboutMeComponent },
+            { path:'my-jobs',component:MyJobsPageComponent },
+            { path:'studies',component:StudiesPageComponent },
+            { path:'expereicence',component:ExperiencePageComponent },
+            { path:'motivations',component:MotivationsPageComponent },
+            { path:'**', redirectTo:'about-me',}
         ]
     }
 ]

@@ -1,5 +1,5 @@
 /* clases cuando esta en modo dark */
-.darkText{
+.darkText {
     color: var(--text-color);
 }
 
@@ -17,30 +17,48 @@
     height: 100%;
     width: 50%;
     padding: 15px;
+    max-height: 100vh;
+    margin-bottom: 50px;
+    background-color: rgba(188, 143, 143, 0.466);
 }
 
-.about__me .container__texts{
+.about__me .container__texts {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
 }
-.about__me div .titles .text{
-    font-size: 2rem;
+.about__me .container__about__me{
     width: 100%;
 }
-.about__me div .titles .text__like{
+.about__me div .titles .text {
+    font-size: 2rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+div p {
+    margin-bottom: 15px;
+}
+
+.about__me div .description {
+    font-size: 1.5rem;
+}
+
+.about__me div .titles .text__like {
     color: var(--primary-color);
     margin-top: 25px;
 }
+
 .about__me .img__perfil {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .about__me div .img {
     display: flex;
-    height: 90%;
-    width: 100%;
+    height: 80%;
+    width: 90%;
     border-radius: 50%;
     box-shadow: 0px 3px 5px rgba(15, 15, 15, 15);
 }
@@ -48,27 +66,44 @@
 @media(max-width: 900px) {
     .about__me {
         flex-direction: row;
-        transition: .5s;
+        transition: var(--trans-05);
     }
 
     .about__me .container {
         width: 100%;
     }
-    .about__me .container__texts{
-        height: 70%;
-        width: 90%;
+
+    .about__me .container__img{
+        height: 450px;
+    }
+
+    .about__me .container__texts {
+        height: 400px;
         margin-bottom: 3rem;
     }
-    .about__me div .img {
-        height: 100%;
+    .about__me div figure .img {
+        transition: var(--trans-05);
     }
 }
-@media(max-width: 630px){
-    .about__me div .titles .text{
-        font-size: 1.5rem;
-        transition: .5s;
+@media(max-width: 736px) {
+    .about__me div figure .img {
+        transition: var(--trans-05);
     }
-    .about__me .container__texts{
-        margin-bottom: 5rem;
+    .text{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:670px) {
+    .about__me .container__texts {
+        transition: var(--trans-05);
+        height: 400px;
+    }
+}
+
+@media(max-width: 484px) {
+    .about__me div figure .img {
+        transition: var(--trans-05);
+        margin-top: 50px;
     }
 }

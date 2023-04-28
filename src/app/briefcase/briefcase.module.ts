@@ -1,21 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
-import { MyJobsComponent } from './pages/my-jobs/my-jobs.component';
+import { MyJobsPageComponent } from './pages/my-jobs-page/my-jobs-page.component';
 
 import { CardModule } from 'primeng/card';
 import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { BriefCaseRoutingModule } from './briefcase-routing.module';
-import { SidebarComponent } from './pages/sidebar/sidebar.component';
-
+import { StudiesPageComponent } from './pages/studies-page/studies-page.component';
+import { ExperiencePageComponent } from './pages/experience-page/experience-page.component';
+import { MotivationsPageComponent } from './pages/motivations-page/motivations-page.component';
+import { HobbiesPageComponent } from './pages/hobbies-page/hobbies-page.component';
 
 
 @NgModule({
   declarations: [
-    SidebarComponent,
     AboutMeComponent,
-    MyJobsComponent,
+    MyJobsPageComponent,
     LayoutPageComponent,
+    StudiesPageComponent,
+    ExperiencePageComponent,
+    MotivationsPageComponent,
+    HobbiesPageComponent,
   ],
   imports: [
     CommonModule,

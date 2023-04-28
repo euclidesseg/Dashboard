@@ -8,7 +8,7 @@ import { BriefcaseModule } from './briefcase/briefcase.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
