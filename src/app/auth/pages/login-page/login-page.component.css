@@ -100,12 +100,6 @@
     padding: 50px;
 }
 
-.form-user, .form-password{
-    margin-top: 10px;
-    display: block;
-    font-family: var(--roboto);
-    font-weight: 450;
-}
 #username, #password{
     margin-top: 10px;
     display: block;
