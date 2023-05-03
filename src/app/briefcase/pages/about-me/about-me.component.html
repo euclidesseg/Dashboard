@@ -1,12 +1,12 @@
 <div class="about__me">
         <div class="container container__texts" [ngClass]="">
-            <div class="titles">
-                <h1 class="text text__title">I'm Euclides Perez</h1>
-                <h1 class="text text__profesion">Software Developer</h1>
+            <div class="titles" [ngClass]="{'darkText':darckModeSelect}">
+                <h1 class="text text__title" [ngClass]="{'darkText':darckModeSelect}">I'm Euclides Perez</h1>
+                <h1 class="text text__profesion" [ngClass]="{'darkText':darckModeSelect}">Software Developer</h1>
                 <p class="text text__like">And i wolk like to work on your next proyect</p>
             </div>
             <div class="description">
-                <p class="text"> I would love to be the first option for your vacancy and work alongside your team during the rest of the project and many more, so that I can move forward and learn</p>
+                <p class="text" [ngClass]="{'darkText':darckModeSelect}"> I would love to be the first option for your vacancy and work alongside your team during the rest of the project and many more, so that I can move forward and learn</p>
             </div>
         </div>
         <div class="container container__img">

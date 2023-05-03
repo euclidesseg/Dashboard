@@ -1,6 +1,7 @@
 /* clases cuando esta en modo dark */
 .darkText {
     color: var(--text-color);
+    transition: var(--trans-05);
 }
 
 .about__me {
@@ -19,7 +20,6 @@
     padding: 15px;
     max-height: 100vh;
     margin-bottom: 50px;
-    background-color: rgba(188, 143, 143, 0.466);
 }
 
 .about__me .container__texts {
