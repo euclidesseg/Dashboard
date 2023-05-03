@@ -4,7 +4,7 @@ import { SharedService } from 'src/app/shared/services/shared.service';
 @Component({
   selector: 'app-layout-page',
   templateUrl: './layout-page.component.html',
-  styleUrls: ['./layout-page.component.css']
+  styleUrls: ['./layout-page.component.css', './layout-page2.component.css']
 })
 export class LayoutPageComponent implements OnInit {
   close: boolean = false;

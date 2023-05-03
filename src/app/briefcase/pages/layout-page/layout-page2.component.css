@@ -1,0 +1,104 @@
+/* clases conditionals */
+.sidebar li a .nav__text__white {
+    color: white;
+    font-weight: bold;
+}
+
+.switchDark::before {
+    left: 20px;
+}
+
+.vela__blue__sidebar {
+    background-color: var(--surface-card);
+}
+
+.vela__blue__sidebar .menu__bar li .pi {
+    color: aliceblue;
+}
+
+.vela__blue__sidebar .menu__bar li .pi__sun::before {
+    content: "\e9c8";
+    transition: .3s;
+}
+
+.vela__blue__sidebar .menu__bar .menu__search .search {
+    color: rgb(255, 255, 255);
+    background-color: var(--surface-50);
+}
+
+.vela__blue__sidebar .menu__bar .menu__search {
+    background-color: var(--surface-50);
+}
+
+.vela__blue__sidebar .header-text {
+    color: var(--sidebar-color);
+}
+
+.vela__blue__sidebar li a .nav__text {
+    color: var(--sidebar-color);
+    font-weight: 600;
+}
+
+.vela__blue__sidebar .mode {
+    background-color: var(--surface-50);
+    color: var(--surface-900);
+    transition: .5s;
+}
+
+.vela__blue__sidebar li a:hover {
+    background-color: var(--surface-d);
+}
+
+.closeNav {
+    width: 75px;
+}
+
+.closeNav .menu__bar .bottom__content li .switch {
+    left: -16px;
+    transition: 1s;
+}
+.closeNav .menu__bar .menu__search .search {
+    margin-left: 15px;
+}
+.closeNav header .header-text {
+    display: none;
+    transition: var(--trans-05);
+}
+
+.closeNav li a .nav__text {
+    display: none;
+}
+
+.closeNav .mode {
+    margin-left: 3px;
+}
+
+.closeNav li .mode__text {
+    display: none;
+}
+
+.sidebar ~ .home {
+    position: fixed;
+    left: 250px;
+    height: 100%;
+    width: calc(100% - 90px);
+    transition: var(--trans-05);
+    padding: 0px 50px 0 50px;
+}
+
+.router__outlet {
+    height: 100%;    
+    padding: 10px 35px 10px 35px;
+    margin-right: 160px;
+    transition: var(--trans-05);
+}
+
+.closeNav ~ .home {
+    left: 75px;
+    width: calc(100% - 75px);
+}
+
+.closeNav ~ .home .router__outlet {
+    margin-right: -10px;
+    transition: var(--trans-05);
+}
