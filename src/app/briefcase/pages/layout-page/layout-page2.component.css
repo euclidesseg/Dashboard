@@ -83,15 +83,7 @@
     height: 100%;
     width: calc(100% - 200px);
     transition: var(--trans-05);
-    padding: 0px 50px 0 50px;
-}
-
-.router__outlet {
-    height: 100%;    
-    padding: 10px 35px 10px 35px;
-    width: calc(100% - 0px);
-    transition: var(--trans-05);
-    z-index: 100;
+    padding: 0px 70px 0 70px;
 }
 
 .closeNav ~ .home {
@@ -99,10 +91,6 @@
     width: calc(100% - 25px);
 }
 
-.closeNav ~ .home .router__outlet {
-    width: calc(100% - 25px);
-    transition: var(--trans-05);
-}
 .sidebar ~ .social__media{
     height: 550px;
     margin-top: 70px;
