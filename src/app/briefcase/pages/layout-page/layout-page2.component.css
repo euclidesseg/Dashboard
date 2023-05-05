@@ -79,9 +79,9 @@
 
 .sidebar ~ .home {
     position: fixed;
-    left: 250px;
+    left: 200px;
     height: 100%;
-    width: calc(100% - 90px);
+    width: calc(100% - 200px);
     transition: var(--trans-05);
     padding: 0px 50px 0 50px;
 }
@@ -89,16 +89,33 @@
 .router__outlet {
     height: 100%;    
     padding: 10px 35px 10px 35px;
-    margin-right: 160px;
+    width: calc(100% - 0px);
     transition: var(--trans-05);
+    z-index: 100;
 }
 
 .closeNav ~ .home {
-    left: 75px;
-    width: calc(100% - 75px);
+    left: 25px;
+    width: calc(100% - 25px);
 }
 
 .closeNav ~ .home .router__outlet {
-    margin-right: -10px;
+    width: calc(100% - 25px);
     transition: var(--trans-05);
+}
+.sidebar ~ .social__media{
+    height: 550px;
+    margin-top: 90px;
+    margin-bottom: auto;
+    width: 80px;
+    background-color: var(--surface-900);
+    position: fixed;
+    right: 0px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: var(--trans-05);
+}
+.vela__blue__sidebar ~ .social__media{
+    transition: var(--trans-05);
+    background-color: var(--surface-card);
 }

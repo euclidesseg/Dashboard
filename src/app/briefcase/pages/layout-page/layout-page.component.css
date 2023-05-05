@@ -43,6 +43,7 @@
 .sidebar header .image-text {
     display: flex;
     align-items: center;
+    transition: var(--trans-05);
 }
 
 .sidebar .pi {
@@ -123,6 +124,7 @@ li {
     border-radius: 5px;
     padding-left: 7px;
     margin-right: 5px;
+    transition: var(--trans-05);
 }
 
 .menu li .search {
@@ -135,6 +137,7 @@ li {
     padding: 5px;
     color: black;
     background-color: var(--primary-color-ligth);
+    transition: var(--trans-05);
 }
 
 .sidebar li a {
