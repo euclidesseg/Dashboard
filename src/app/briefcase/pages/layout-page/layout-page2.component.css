@@ -105,14 +105,14 @@
 }
 .sidebar ~ .social__media{
     height: 550px;
-    margin-top: 90px;
+    margin-top: 70px;
     margin-bottom: auto;
-    width: 80px;
+    width: 60px;
     background-color: var(--surface-900);
     position: fixed;
     right: 0px;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     transition: var(--trans-05);
 }
 .vela__blue__sidebar ~ .social__media{
