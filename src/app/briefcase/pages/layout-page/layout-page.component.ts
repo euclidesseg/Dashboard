@@ -11,7 +11,7 @@ export class LayoutPageComponent implements OnInit {
   darkModeSelect: boolean = false
   mode = 'Dark Mode'
 
-  // esta injeccion la uso para obtener una referencia al DOM del body y asi asignarle o removele 
+  // esta injeccion la uso para obtener una referencia al DOM del body y asi asignarle o removele
   // una clase su uso se ve estableciso en el metodo darkMode
   constructor(
     private sharedService: SharedService
@@ -33,7 +33,7 @@ export class LayoutPageComponent implements OnInit {
     this.close = this.sharedService.openClose()
   }
   oppenWithSearch() {
-    if (this.close == true) {
+    if (this.close) {
       this.openOrCloseSidebar()
     } else {
       return
@@ -44,4 +44,13 @@ export class LayoutPageComponent implements OnInit {
     this.darkModeSelect = modeObject.isActive;
     this.mode = modeObject.modeText;
   }
+
+  public sidebarItems = [
+
+    {   label:'About me', icon:'pi pi-user',url:'./about-me'},
+    {   label:'Jobs', icon:'pi pi-briefcase',url:'./my-jobs' },
+    {   label:'Studies', icon:'pi pi-book',url:'./studies' },
+    {   label:'Experience', icon:'pi pi-globe',url:'./expereicence' },
+    {   label:'Motivations', icon:'pi pi-heart-fill',url:'./motivations' },
+  ]
 }

@@ -17,80 +17,32 @@
 
     <div class="menu__bar">
         <div class="menu">
-            <li class="menu__search" (click)="oppenWithSearch()">
-                <i class="pi pi-search"></i>
+            <li class="menu__search">
+                <i class="pi pi-search" (click)="oppenWithSearch()"></i>
                 <input type="search" class="search" placeholder="Search....">
             </li>
-            <ul class="menu__list" style="max-height: 50vh;">
-                <li class="nav__link">
-                    <a href="#">
-                        <i class="pi pi-user"></i>
+            <ul class="menu__list">
+                <li class="nav__link" *ngFor="let item of sidebarItems" [routerLink]="item.url">
+                        <i [ngClass]="item.icon"></i>
                         <span class="text nav__text">
-                            Sobre mi
+                            {{item.label}}
                         </span>
-                    </a>
-                </li>
-              
-                <li class="nav__link">
-                    <a href="#">
-                        <i class="pi pi-briefcase">
-                        </i>
-                        <span class="text nav__text">
-                            Trabajos
-                        </span>
-                    </a>
-                </li>
-              
-                <li class="nav__link">
-                    <a href="#">
-                        <i class="pi pi-book">
-                        </i>
-                        <span class="text nav__text">
-                            Estudios
-                        </span>
-                    </a>
-                </li>
-                <li class="nav__link">
-                    <a routerLink="./expereicence">
-                        <i class="pi pi-globe"></i>
-                        <span class="text nav__text">
-                            Experiencia
-                        </span>
-                    </a>
-                </li>
-                <li class="nav__link">
-                    <a href="#">
-                        <i class="pi pi-heart-fill"></i>
-                        <span class="text nav__text">
-                            Motivaciones
-                        </span>
-                    </a>
-                </li>
-                <li class="nav__link">
-                    <a href="#">
-                        <i class="pi pi-list"></i>
-                        <span class="text nav__text">
-                            Hobbies
-                        </span>
-                    </a>
                 </li>
             </ul>
 
         </div>
         <div class="bottom__content">
-            <li class="" style="transition: 2s;">
-                <a href="#">
+            <li class="log">
                     <i class="pi pi-power-off"></i>
                     <span class="text nav__text">
                         Logout
                     </span>
-                </a>
             </li>
             <li class="mode" (click)="darkMode()">
                 <div class="moon__sun">
-                    <i class="pi pi-moon" [ngClass]="{'pi__sun': darkModeSelect}" style="transition: .3s;"></i>
+                    <i class="pi pi-moon" [ngClass]="{'pi__sun': darkModeSelect}"></i>
                 </div>
-                <span class="mode__text tex" style="transition: .3s;">{{ mode }}</span >
+                <span class="mode__text tex">{{ mode }}</span >
                 <div class="toggle__switch">
                     <span class="switch" [ngClass]="{switchDark: darkModeSelect}"></span>
                 </div>
@@ -98,10 +50,12 @@
         </div>
     </div>
 </nav>
+
+
 <section class="home">
-        <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </section>
 
 <section class="social__media">
-    
+
 </section>

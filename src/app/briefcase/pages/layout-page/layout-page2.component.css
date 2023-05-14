@@ -34,7 +34,7 @@
     color: var(--sidebar-color);
 }
 
-.vela__blue__sidebar li a .nav__text {
+.vela__blue__sidebar li .nav__text {
     color: var(--sidebar-color);
     font-weight: 600;
 }
@@ -45,7 +45,7 @@
     transition: .5s;
 }
 
-.vela__blue__sidebar li a:hover {
+.vela__blue__sidebar li:hover {
     background-color: var(--surface-d);
 }
 
@@ -58,19 +58,19 @@
     transition: 1s;
 }
 .closeNav .menu__bar .menu__search .search {
-    margin-left: 15px;
+    margin-left: 25px;
 }
 .closeNav header .header-text {
     display: none;
     transition: var(--trans-05);
 }
 
-.closeNav li a .nav__text {
+.closeNav li .nav__text {
     display: none;
 }
 
 .closeNav .mode {
-    margin-left: 3px;
+    margin-left: 7px;
 }
 
 .closeNav li .mode__text {
@@ -92,16 +92,16 @@
 }
 
 .sidebar ~ .social__media{
-    height: 550px;
+    height: 300px;
     margin-top: 70px;
     margin-bottom: auto;
-    width: 60px;
+    width: 50px;
     background-color: var(--surface-900);
     position: fixed;
     right: 0px;
     border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
     transition: var(--trans-05);
+    bottom: 0 ;
 }
 .vela__blue__sidebar ~ .social__media{
     transition: var(--trans-05);
