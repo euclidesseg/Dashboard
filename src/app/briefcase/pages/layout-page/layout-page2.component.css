@@ -79,16 +79,15 @@
 
 .sidebar ~ .home {
     position: fixed;
-    left: 200px;
+    margin-left: 260px;
     height: 100%;
-    width: calc(100% - 200px);
+    width: calc(100% - 240px);
     transition: var(--trans-05);
-    padding: 0px 70px 0 70px;
 }
 
 .closeNav ~ .home {
-    left: 25px;
-    width: calc(100% - 25px);
+    margin-left: 85px;
+    width: calc(100% - 70px);
 }
 
 .sidebar ~ .social__media{
