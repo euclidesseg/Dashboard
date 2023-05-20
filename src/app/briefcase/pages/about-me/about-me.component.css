@@ -1,15 +1,3 @@
-/* clases cuando esta en modo dark */
-.darkText {
-  color: var(--text-color);
-  transition: var(--trans-05);
-}
-
-
-/* clases cuando esta en modo dark */
-.darkText {
-  color: var(--text-color);
-  transition: var(--trans-05);
-}
 
 .container {
   height: 100%;
@@ -19,59 +7,94 @@
   overflow-y: auto;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0px 85px 0px 15px;
-}
+  padding: 0px 15px 0px 15px;
 
-.container .container__paragraphs {
-  margin-top: 15px;
+}
+.container .section{
   width: 500px;
   height: 600px;
   display: flex;
+  max-height: 700px;
+  padding: 15px;
+  transition: var(--trans-05);
+}
+.container .container__paragraphs {
   justify-content: space-evenly;
   flex-direction: column;
-  padding: 15px;
 }
 .container__paragraphs .i__texts{
   font-size: 2rem;
-  color: tomato;
+  color: #dd1b16;
 }
-.container__paragraphs .i__like{
+.container__paragraphs .i__like, .container__hero .text{
   font-size: 1.5rem;
+  color: var(--surface-f);
 }
-.i__like .text__like{
-  color: var(--login);
+.i__like .text__like , .container__hero .text__know{
+  color: #6DB33F;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 25px;
 }
 .container .container__img {
-  margin-top: 15px;
-  width:500px;
-  height: 600px;
-  max-height: 700px;
   display: flex;
-  align-items: center;
+  transition: var(--trans-05);
+}
+.container .container__hero{
+  height: 350px;
+  margin-top: 100px;
 }
 
 .container__img .img__perfil img {
-  height: 95%;
+  height: 60%;
   width: 100%;
-  border-radius: 50%;
-  box-shadow: 0px 0px 155px rgba(15, 15, 15, 15)
+  min-width: 150px;
+  position: relative;
+  top: 115px;
+  box-shadow: 10px 10px 35px rgba(15, 15, 15, 15);
 }
 
 @media(max-width: 490px){
 
   .container .container__paragraphs {
-   margin-top: 150px;
+   margin-top: 50px;
+  }
+  .container .container__img {
+    height: 300px;
   }
 }
 
-@media(max-width: 437px){
+@media(max-width: 417px){
 
   .container .container__img {
-    height: 200px;
-    margin-top: 100px;
+    margin-top: 50px;
     align-items: start;
+    transition: var(--trans-05);
   }
+  .container__img .img__perfil img{
+    top: 70px;
+  }
+}
+
+@media(max-width: 365px){
+  .container__paragraphs .i__texts{
+    font-size: 1.5rem;
+  }
+  .container__paragraphs .i__like, .container__hero .text{
+    font-size: 1rem;
+  }
+  .container__img .img__perfil img{
+    top: 15px;
+  }
+  .container .container__img {
+    height: 150px;
+  }
+  .container .container__hero{
+    margin-top: 70px;
+  }
+}
+/* clases cuando esta en modo dark */
+.darkText div .i__like .text {
+  color: var(--text-color);
+  transition: var(--trans-05);
 }

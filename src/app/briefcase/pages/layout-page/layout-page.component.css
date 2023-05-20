@@ -150,13 +150,13 @@ li {
     color: black;
 }
 
-.sidebar li:hover {
+.sidebar li:hover, .sidebar li:focus{
     background-color: var(--primary-color);
     color: white;
 
 }
 
-.sidebar li:hover .text {
+.sidebar li:hover .text,.sidebar li:focus .text {
     color: var(--sidebar-color);
     font-weight: bold;
 }
@@ -182,7 +182,8 @@ li {
     width: calc(100% - 10px);
     margin-right: 10px;
     margin-bottom: 5px;
-}
+    color: var(--surface-f);
+  }
 
 .menu__bar .mode .moon__sun {
     height: 50px;

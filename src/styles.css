@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-:root {  
+:root {
 
   /* fonts */
   --roboto: 'Roboto', sans-serif;
@@ -32,7 +32,7 @@
   --surface-c: rgba(255, 255, 255, 0.03);
   --surface-d: #304562;
   --surface-e: #1f2d40;
-  --surface-f: #1f2d40;
+  --surface-f: #0c1219;
   --text-color: rgba(255, 255, 255, 0.87);
   --text-color-secondary: rgba(255, 255, 255, 0.6);
   --primary-color: #64B5F6;

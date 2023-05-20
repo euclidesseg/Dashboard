@@ -45,7 +45,7 @@
     transition: .5s;
 }
 
-.vela__blue__sidebar li:hover {
+.vela__blue__sidebar li:hover, .vela__blue__sidebar li:focus {
     background-color: var(--surface-d);
 }
 
@@ -86,7 +86,7 @@
 }
 
 .closeNav ~ .home {
-    margin-left: 85px;
+    margin-left: 75px;
     width: calc(100% - 70px);
 }
 
