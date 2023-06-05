@@ -30,6 +30,9 @@
     background-color: var(--sidebar-color);
     transition: 0.5s;
     z-index: 100;
+    ::placeholder{
+      color: rgb(18, 18, 19);
+    }
 }
 
 .sidebar .image-text {
@@ -158,7 +161,6 @@ li {
 
 .sidebar li:hover .text,.sidebar li:focus .text {
     color: var(--sidebar-color);
-    font-weight: bold;
 }
 
 .menu__bar .bottom__content {

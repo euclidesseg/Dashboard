@@ -10,6 +10,7 @@ import { StudiesPageComponent } from './pages/studies-page/studies-page.componen
 import { ExperiencePageComponent } from './pages/experience-page/experience-page.component';
 import { MotivationsPageComponent } from './pages/motivations-page/motivations-page.component';
 import { HobbiesPageComponent } from './pages/hobbies-page/hobbies-page.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { HobbiesPageComponent } from './pages/hobbies-page/hobbies-page.componen
     ExperiencePageComponent,
     MotivationsPageComponent,
     HobbiesPageComponent,
+    ContactFormComponent,
   ],
   imports: [
     CommonModule,

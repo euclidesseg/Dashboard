@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { SharedService} from "./services/shared.service";
+import { DarkModeService} from "./services/dark-mode-close.service";
 import { Error404PageComponent } from './pages/error404-page/error404-page.component';
 
 
@@ -14,7 +14,7 @@ import { Error404PageComponent } from './pages/error404-page/error404-page.compo
     exports:[
     ],
     providers:[
-        SharedService
+      DarkModeService
     ]
 })
 export class SharedModule{

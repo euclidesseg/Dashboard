@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SharedService } from 'src/app/shared/services/shared.service';
+import { DarkModeService } from 'src/app/shared/services/dark-mode-close.service';
 
 @Component({
   selector: 'app-about-me',
@@ -8,12 +8,12 @@ import { SharedService } from 'src/app/shared/services/shared.service';
 })
 export class AboutMeComponent implements OnInit{
   darckModeSelect:boolean = false
-  constructor(private sharedService:SharedService){}
-  
+  constructor(private sharedService:DarkModeService){}
+
   ngOnInit(): void {
     this.sharedService.darkModeIsSelect
     .subscribe((value) => {this.darckModeSelect = value})
-    
+
   }
 
 

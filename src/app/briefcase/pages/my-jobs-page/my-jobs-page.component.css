@@ -1,0 +1,24 @@
+.trabajos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.trabajo {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.trabajo img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .trabajo {
+    width: 100%;
+  }
+}

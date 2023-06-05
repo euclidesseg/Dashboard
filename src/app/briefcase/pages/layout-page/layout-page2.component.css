@@ -1,7 +1,6 @@
 /* clases conditionals */
 .sidebar li a .nav__text__white {
     color: white;
-    font-weight: bold;
 }
 
 .switchDark::before {
@@ -10,6 +9,9 @@
 
 .vela__blue__sidebar {
     background-color: var(--surface-card);
+    ::placeholder{
+      color: rgb(236, 238, 240);
+    }
 }
 
 .vela__blue__sidebar .menu__bar li .pi {
@@ -36,7 +38,6 @@
 
 .vela__blue__sidebar li .nav__text {
     color: var(--sidebar-color);
-    font-weight: 600;
 }
 
 .vela__blue__sidebar .mode {

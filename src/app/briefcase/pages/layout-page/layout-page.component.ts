@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SharedService } from 'src/app/shared/services/shared.service';
+import { DarkModeService } from 'src/app/shared/services/dark-mode-close.service';
 
 @Component({
   selector: 'app-layout-page',
@@ -14,7 +14,7 @@ export class LayoutPageComponent implements OnInit {
   // esta injeccion la uso para obtener una referencia al DOM del body y asi asignarle o removele
   // una clase su uso se ve estableciso en el metodo darkMode
   constructor(
-    private sharedService: SharedService
+    private sharedService: DarkModeService
   ) { }
 
 

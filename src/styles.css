@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@300;400;700&family=Roboto+Flex:wght@200;400;500;600&family=Roboto:wght@400;500;700&display=swap');
 
 * {
-  font-family: 'popping', sans-serif;
+  font-family: 'montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

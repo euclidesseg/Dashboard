@@ -5,7 +5,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class SharedService implements OnInit {
+export class DarkModeService implements OnInit {
   close: boolean = false;
 
   private _darkModeIsSelect = new BehaviorSubject<boolean>(false);
@@ -40,9 +40,9 @@ export class SharedService implements OnInit {
 
 // NOTAS: ( darkModeIsSelect) es una variable publica que emite un  observable, el cual recibe mediante asObservable(),
 // el ultimo valor emitido por (_darkModeIsSelect).
-// selecDarkMode() es el método que cambia el valor del objeto observable (_darkModeIsSelect) y emite el nuevo valor 
+// selecDarkMode() es el método que cambia el valor del objeto observable (_darkModeIsSelect) y emite el nuevo valor
 
-// El método next() de BehaviorSubject es utilizado para actualizar el valor almacenado 
+// El método next() de BehaviorSubject es utilizado para actualizar el valor almacenado
 // en el objeto observable y notificar a sus suscriptores del cambio.
 
 // . El método asObservable() de la clase BehaviorSubject crea y devuelve un observable que emite el último valor emitido por el objeto
