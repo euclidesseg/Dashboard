@@ -22,11 +22,11 @@
 
 .vela__blue__sidebar .menu__bar .menu__search .search {
     color: rgb(255, 255, 255);
-    background-color: var(--surface-50);
+    background-color: var(--surface-d);
 }
 
 .vela__blue__sidebar .menu__bar .menu__search {
-    background-color: var(--surface-50);
+    background-color: var(--surface-d);
 }
 .vela__blue__sidebar .menu__bar .search::placeholder{
   color: rgb(236, 238, 240);
@@ -41,7 +41,7 @@
 }
 
 .vela__blue__sidebar .mode {
-    background-color: var(--surface-50);
+    background-color: var(--surface-d);
     color: var(--surface-900);
     transition: var(--trans-03);
     overflow: hidden;
@@ -50,7 +50,9 @@
 .vela__blue__sidebar li:hover, .vela__blue__sidebar li:focus {
     background-color: var(--surface-d);
 }
-
+.closeNav .menu__bar i, .bottom__content i{
+  margin-left: 5px;
+}
 .closeNav {
     width: 75px;
     transition: var(--trans-02);
@@ -93,18 +95,6 @@
     width: calc(100% - 70px);
 }
 
-.sidebar ~ .social__media{
-    height: 300px;
-    margin-top: 70px;
-    margin-bottom: auto;
-    width: 50px;
-    background-color: var(--surface-900);
-    position: fixed;
-    right: 0px;
-    border-top-left-radius: 30px;
-   transition: var(--trans-03);
-    bottom: 0 ;
-}
 .vela__blue__sidebar ~ .social__media{
    transition: var(--trans-03);
     background-color: var(--surface-card);

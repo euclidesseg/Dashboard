@@ -10,9 +10,9 @@
   background-color: var(--sidebar-color);
   text-decoration-style:solid blue;
 
-  ::placeholder{
-    color: black;
-  }
+}
+.form .form__input::placeholder{
+  color: black;
 }
 
 .form__container{
@@ -28,6 +28,7 @@
 .form__title{
   text-align: center;
   font-size: 1.5rem;
+  color: black;
   transition: var(--trans-03);
 }
 .form__input{
@@ -91,13 +92,14 @@
 .dark{
   background-color: var(--surface-card);
   transition: var(--trans-03);
-  ::placeholder{
-    color:aliceblue;
-  }
 }
 .dark .form__input{
   color: aliceblue;
 }
+.dark .form__input::placeholder{
+  color: white;
+}
+
 .dark .form__title{
   color: aliceblue;
   transition: var(--trans-03);
