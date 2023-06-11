@@ -9,7 +9,7 @@ import { DarkModeService } from 'src/app/shared/services/dark-mode-close.service
 export class LayoutPageComponent implements OnInit {
   close: boolean = false;
   darkModeSelect: boolean = false
-  mode = 'Dark Mode'
+  mode = 'Dark'
 
   // esta injeccion la uso para obtener una referencia al DOM del body y asi asignarle o removele
   // una clase su uso se ve estableciso en el metodo darkMode

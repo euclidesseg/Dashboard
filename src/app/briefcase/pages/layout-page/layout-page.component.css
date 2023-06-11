@@ -4,7 +4,7 @@
     margin-left: 10px;
     display: flex;
     align-items: center;
-    transition: var(--trans-05);
+    transition: var(--trans-02);
 }
 
 .sidebar .image {
@@ -28,11 +28,8 @@
     padding: 10px 10px;
     width: 250px;
     background-color: var(--sidebar-color);
-    transition: 0.5s;
+    transition: var(--trans-02);
     z-index: 100;
-    ::placeholder{
-      color: rgb(18, 18, 19);
-    }
 }
 
 .sidebar .image-text {
@@ -47,19 +44,21 @@
 .sidebar header .image-text {
     display: flex;
     align-items: center;
-    transition: var(--trans-05);
+   transition: var(--trans-03);
 }
 
 .sidebar .pi {
     margin-left: 2.5px;
 }
-
+.sidebar .menu__bar .menu__list i, .bottom__content i{
+  color: black;
+}
 .menu__bar .menu {
     overflow: hidden;
     height: 100%;
 }
 
-.menu__bar .menu .menu__list {
+.menu__bar .menu__list {
     margin-top: 10px;
     max-height: 420px;
     overflow-y: auto;
@@ -75,7 +74,7 @@
 header .image-text .header-text {
     display: flex;
     flex-direction: column;
-    transition: var(--trans-05);
+   transition: var(--trans-03);
 }
 
 header .image-text .image__logo {
@@ -131,7 +130,7 @@ li {
     background-color: var(--primary-color-ligth);
     border-radius: 5px;
     width: calc(100% - 10px);
-    transition: var(--trans-05);
+   transition: var(--trans-03);
 }
 
 .menu li .search {
@@ -144,7 +143,10 @@ li {
     padding: 5px;
     color: black;
     background-color: var(--primary-color-ligth);
-    transition: var(--trans-05);
+   transition: var(--trans-03);
+}
+.menu li .search::placeholder {
+  color: rgb(18, 18, 19);
 }
 
 
@@ -180,10 +182,11 @@ li {
 .menu__bar .mode {
     background-color: var(--primary-color-ligth);
     border-radius: 5px;
-    transition: var(--trans-05);
+    transition: var(--trans-03);
     width: calc(100% - 10px);
     margin-right: 10px;
     margin-bottom: 5px;
+    position: relative;
     color: var(--surface-f);
   }
 
@@ -191,12 +194,13 @@ li {
     height: 50px;
     width: 50px;
     display: flex;
-    align-items: center;
-    transition: .5s;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .menu__bar .mode i {
     position: absolute;
+    top: 17px;
 }
 
 .menu__bar .mode i.sun {
@@ -211,26 +215,32 @@ li {
     height: 100%;
     min-width: 60px;
     cursor: pointer;
-}
+    position: relative;
+    margin-left: 45px;
 
+}
+.sidebar li .mode__text {
+  width: auto;
+  overflow: hidden;
+}
 .toggle__switch .switch {
     position: relative;
     height: 22px;
     width: 35px;
     border-radius: 20px;
     background-color: var(--toggle-color);
-    transition: var(--trans-05);
+    transition: var(--trans-03);
 }
 
 .switch::before {
     content: '';
     position: absolute;
-    top: 3.7px;
+    top: 4px;
     left: 3px;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    transition: var(--trans-05);
+   transition: var(--trans-03);
     background-color: var(--surface-d);
 }
 

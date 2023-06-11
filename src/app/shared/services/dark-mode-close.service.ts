@@ -29,11 +29,11 @@ export class DarkModeService implements OnInit {
     if (isActive) {
       this.document.body.classList.add('vela__blue');
       this._darkModeIsSelect.next(true);
-      return { isActive: true, modeText: 'Light Mode' };
+      return { isActive: true, modeText: 'Light' };
     } else {
       this.document.body.classList.remove('vela__blue');
       this._darkModeIsSelect.next(false);
-      return { isActive: false, modeText: 'Dark Mode' };
+      return { isActive: false, modeText: 'Dark' };
     }
   }
 }
