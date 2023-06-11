@@ -85,10 +85,7 @@
   }
 }
 @media(max-width:339px){
-  .form__title{
-    font-size: .5rem;
-    transition: .2s;
-  }
+
 }
 
 .dark{

@@ -44,6 +44,7 @@
     background-color: var(--surface-50);
     color: var(--surface-900);
     transition: var(--trans-03);
+    overflow: hidden;
 }
 
 .vela__blue__sidebar li:hover, .vela__blue__sidebar li:focus {

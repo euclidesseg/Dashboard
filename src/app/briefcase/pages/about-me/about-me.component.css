@@ -54,6 +54,7 @@
   box-shadow: 10px 10px 35px rgba(15, 15, 15, 15);
 }
 .section__form{
+  overflow: hidden;
   margin-top: 200px;
   width: 700px;
 }
@@ -78,7 +79,7 @@
   .container .container__img {
     margin-top: 50px;
     align-items: start;
-    transition: var(--trans-03);
+    transition: var(--trans-05);
   }
   .container__img .img__perfil img{
     top: 70px;

@@ -50,7 +50,7 @@
 .sidebar .pi {
     margin-left: 2.5px;
 }
-.sidebar .menu__bar .menu__list i, .bottom__content i{
+.sidebar .menu__bar i, .bottom__content i{
   color: black;
 }
 .menu__bar .menu {
@@ -188,6 +188,7 @@ li {
     margin-bottom: 5px;
     position: relative;
     color: var(--surface-f);
+    overflow: hidden;
   }
 
 .menu__bar .mode .moon__sun {
