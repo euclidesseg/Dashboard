@@ -53,9 +53,10 @@
 .sidebar .menu__bar i, .bottom__content i{
   color: black;
 }
-.menu__bar .menu {
+.menu__bar {
     overflow: hidden;
     height: 100%;
+    margin-left: -5px;
 }
 
 .menu__bar .menu__list {
@@ -78,19 +79,15 @@ header .image-text .header-text {
 }
 
 header .image-text .image__logo {
-    width: 40px;
+    width: 42px;
     height: 40px;
-    margin-left: 5px;
+    margin-left: 1px;
 }
 
 .header-text .name {
     margin: -2px;
     font-weight: 600;
-}
-
-.header-text .profesion {
-    margin-top: -2px;
-    font-weight: 600;
+    width: auto;
 }
 
 .sidebar header .toggle {
@@ -159,10 +156,6 @@ li {
     background-color: var(--primary-color);
     color: white;
 
-}
-
-.sidebar li:hover .text,.sidebar li:focus .text {
-    color: var(--sidebar-color);
 }
 
 .menu__bar .bottom__content {

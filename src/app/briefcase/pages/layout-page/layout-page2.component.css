@@ -50,20 +50,24 @@
 .vela__blue__sidebar li:hover, .vela__blue__sidebar li:focus {
     background-color: var(--surface-d);
 }
-.closeNav .menu__bar i, .bottom__content i{
-  margin-left: 5px;
-}
 .closeNav {
     width: 75px;
     transition: var(--trans-02);
 }
+.closeNav .menu__bar li {
+  margin-left: 10px;
+  width: 43px;
+}
+.closeNav .menu__bar i, .bottom__content i{
+  margin-left: 5px;
+}
 
-.closeNav .menu__bar .bottom__content li .switch {
+.closeNav .menu__bar li .switch {
     left: -16px;
     transition: 1s;
 }
 .closeNav .menu__bar .bottom__content .mode .toggle__switch{
-  margin-left: 0px;
+  margin-left: -1px;
 }
 
 .closeNav .menu__bar .menu__search .search {
@@ -87,7 +91,8 @@
     margin-left: 260px;
     height: 100%;
     width: calc(100% - 240px);
-   transition: var(--trans-03);
+    overflow-y: auto;
+    transition: var(--trans-03);
 }
 
 .closeNav ~ .home {
