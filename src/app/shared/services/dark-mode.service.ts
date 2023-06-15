@@ -6,22 +6,14 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DarkModeService implements OnInit {
-  close: boolean = false;
 
   private _darkModeIsSelect = new BehaviorSubject<boolean>(false);
   darkModeIsSelect :Observable<boolean> =  this._darkModeIsSelect.asObservable()
 
 
-  constructor(
-    @Inject(DOCUMENT) private document: Document,
-  ) { }
+  constructor( @Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit(): void {
-  }
-
-  openClose():boolean{
-    this.close = !this.close
-    return this.close
   }
 
    selecDarkMode(): { isActive: boolean, modeText: string } {
@@ -47,3 +39,13 @@ export class DarkModeService implements OnInit {
 
 // . El método asObservable() de la clase BehaviorSubject crea y devuelve un observable que emite el último valor emitido por el objeto
 // en este caso el objeto es  _darkModeIsSelect
+
+
+// constructor(
+//  @Inject(DOCUMENT) private document: Document,
+//  ) { }
+
+// Este modo de inyección se utiliza para proporcionar una referencia
+// al objeto Document en el componente o clase en la que se está utilizando.
+// Es común utilizar esta inyección cuando se necesita acceder a las propiedades y métodos del objeto Document,
+// como crear elementos HTML dinámicamente o manipular el árbol DOM.

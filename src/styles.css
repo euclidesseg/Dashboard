@@ -23,6 +23,7 @@
   --trans-05: all 0.5s ease;
   /* Colors */
   --login:#159c93;
+  --spring-boot:#6DB33F;
   --primary-color-ligth: #f6f5ff;
   --toggle-color: #ddd;
   --bodi-color: #e4e9f7;
@@ -116,4 +117,10 @@ body {
 
 ::-ms-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* clases para textos cuando esta en modo dark */
+.darkText{
+  color: var(--text-color) !important
+  /* transition: var(--trans-05); */
 }

@@ -1,4 +1,4 @@
-<nav class="sidebar" [ngClass]="{'closeNav': close, 'vela__blue__sidebar': darkModeSelect}">
+<nav class="sidebar" [ngClass]="{'closeNav': isClose, 'vela__blue__sidebar': darkModeSelect}">
     <!-- acabo de agregar dos clases dependiendo de dos condiciones -->
     <header>
         <div class="image-text">
@@ -17,7 +17,7 @@
     <div class="menu__bar">
         <div class="menu">
             <li class="menu__search">
-                <i class="pi pi-search" (click)="oppenWithSearch()"></i>
+                <i class="pi pi-search" (click)="openWithSearch()"></i>
                 <input type="search" class="search" placeholder="Search....">
             </li>
             <ul class="menu__list">

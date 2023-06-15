@@ -24,16 +24,18 @@
   margin-bottom: 55px;
 }
 .container__paragraphs .i__texts{
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #dd1b16;
 }
 .container__paragraphs .i__like, .container__hero .text{
   margin-top: 15px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+.i__like, .container__hero{
   color: var(--surface-f);
 }
 .i__like .text__like , .container__hero .text__know{
-  color: #6DB33F;
+  color: var(--spring-boot);
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 25px;
@@ -73,14 +75,9 @@
     font-size: 1.1rem;
   }
   .container__paragraphs .i__like, .container__hero .text{
-    font-size: 14px;
+    font-size: 16px;
   }
   .i__like  .text__like{
     font-size: 1.5rem;
   }
-}
-/* clases cuando esta en modo dark */
-.darkText div .i__like .text {
-  color: var(--text-color);
-  transition: var(--trans-05);
 }

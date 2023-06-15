@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DarkModeService } from 'src/app/shared/services/dark-mode-close.service';
+import { DarkModeService } from 'src/app/shared/services/dark-mode.service';
 
 @Component({
   selector: 'app-contact-form',

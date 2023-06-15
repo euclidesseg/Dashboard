@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DarkModeService } from 'src/app/shared/services/dark-mode-close.service';
+import { DarkModeService } from 'src/app/shared/services/dark-mode.service';
 
 @Component({
   selector: 'app-layout-page',
@@ -7,7 +7,7 @@ import { DarkModeService } from 'src/app/shared/services/dark-mode-close.service
   styleUrls: ['./layout-page.component.css', './layout-page2.component.css']
 })
 export class LayoutPageComponent implements OnInit {
-  close: boolean = false;
+  isClose: boolean = false;
   darkModeSelect: boolean = false
   mode = 'Dark'
 
@@ -21,23 +21,19 @@ export class LayoutPageComponent implements OnInit {
   ngOnInit(): void {
     window.addEventListener('resize', () => {
       // window.innerWidth me obtiene el ancho actual de la ventana
-      if (window.innerWidth < 737) {
-        this.close = true;
+      if (window.innerWidth < 745) {
+        this.isClose = true;
       } else {
-        this.close = false;
+        this.isClose = false;
       }
     });
   }
 
   openOrCloseSidebar() {
-    this.close = this.sharedService.openClose()
+    this.isClose = !this.isClose;
   }
-  oppenWithSearch() {
-    if (this.close) {
-      this.openOrCloseSidebar()
-    } else {
-      return
-    }
+  openWithSearch() {
+   this.isClose = false
   }
   darkMode() {
     const modeObject = this.sharedService.selecDarkMode();
