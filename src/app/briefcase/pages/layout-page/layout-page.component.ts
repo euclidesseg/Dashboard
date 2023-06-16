@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { DarkModeService } from 'src/app/shared/services/dark-mode.service';
 
 @Component({
@@ -33,8 +34,13 @@ export class LayoutPageComponent implements OnInit {
     this.isClose = !this.isClose;
   }
   openWithSearch() {
-   this.isClose = false
+    if(this.isClose)   this.isClose = false
+    else if(this.control.touched){
+      this.isClose = false
+    }
   }
+  public control = new FormControl({})
+
   darkMode() {
     const modeObject = this.sharedService.selecDarkMode();
     this.darkModeSelect = modeObject.isActive;

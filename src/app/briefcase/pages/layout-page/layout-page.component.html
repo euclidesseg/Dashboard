@@ -18,7 +18,7 @@
         <div class="menu">
             <li class="menu__search">
                 <i class="pi pi-search"  (click)="openWithSearch()"></i>
-                <input type="search" class="search" placeholder="Search....">
+                <input type="search" class="search" placeholder="Search...." [formControl] = "control">
             </li>
             <ul class="menu__list">
                 <li class="nav__link" *ngFor="let item of sidebarItems" [routerLink]="item.url">
