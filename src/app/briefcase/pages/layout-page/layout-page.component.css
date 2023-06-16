@@ -88,6 +88,7 @@ header .image-text .image__logo {
     margin: -2px;
     font-weight: 600;
     width: auto;
+    color: black;
 }
 
 .sidebar header .toggle {

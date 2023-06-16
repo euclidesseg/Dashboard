@@ -10,7 +10,9 @@
 .vela__blue__sidebar {
     background-color: var(--surface-card);
 }
-
+.vela__blue__sidebar .header-text .name{
+  color: var(--sidebar-color);
+}
 .vela__blue__sidebar .menu__bar li .pi {
     color: aliceblue;
 }
