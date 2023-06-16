@@ -11,7 +11,6 @@ import { ExperiencePageComponent } from './pages/experience-page/experience-page
 import { MotivationsPageComponent } from './pages/motivations-page/motivations-page.component';
 import { HobbiesPageComponent } from './pages/hobbies-page/hobbies-page.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
-import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,8 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     CardModule,
-    BriefCaseRoutingModule,
-    ReactiveFormsModule
+    BriefCaseRoutingModule
+
   ],
   exports:[
     AboutMeComponent
