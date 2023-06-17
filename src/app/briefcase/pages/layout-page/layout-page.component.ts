@@ -1,5 +1,4 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DarkModeService } from 'src/app/shared/services/dark-mode.service';
 
 @Component({
@@ -12,7 +11,11 @@ export class LayoutPageComponent implements OnInit {
   darkModeSelect: boolean = false
   mode = 'Dark'
 
-  constructor(    private sharedService: DarkModeService, @Inject(DOCUMENT) private document: Document  ) { }
+  // esta injeccion la uso para obtener una referencia al DOM del body y asi asignarle o removele
+  // una clase su uso se ve estableciso en el metodo darkMode
+  constructor(
+    private sharedService: DarkModeService
+  ) { }
 
 
   ngOnInit(): void {
@@ -30,8 +33,7 @@ export class LayoutPageComponent implements OnInit {
     this.isClose = !this.isClose;
   }
   openWithSearch() {
-   this.isClose = false;
-   this.document.body.classList.remove('closeNav');
+   this.openOrCloseSidebar()
   }
   darkMode() {
     const modeObject = this.sharedService.selecDarkMode();
