@@ -21,7 +21,7 @@ export class LayoutPageComponent implements OnInit {
   ngOnInit(): void {
     window.addEventListener('resize', () => {
       // window.innerWidth me obtiene el ancho actual de la ventana
-      if (window.innerWidth < 745) {
+      if (window.innerWidth < 400) {
         this.isClose = true;
       } else {
         this.isClose = false;
@@ -31,6 +31,9 @@ export class LayoutPageComponent implements OnInit {
 
   openOrCloseSidebar() {
     this.isClose = !this.isClose;
+  }
+  openWithSearch() {
+   this.openOrCloseSidebar()
   }
   darkMode() {
     const modeObject = this.sharedService.selecDarkMode();
