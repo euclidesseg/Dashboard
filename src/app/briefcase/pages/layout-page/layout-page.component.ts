@@ -11,17 +11,14 @@ export class LayoutPageComponent implements OnInit {
   darkModeSelect: boolean = false
   mode = 'Dark'
 
-  // esta injeccion la uso para obtener una referencia al DOM del body y asi asignarle o removele
-  // una clase su uso se ve estableciso en el metodo darkMode
-  constructor(
-    private sharedService: DarkModeService
-  ) { }
+
+  constructor( private sharedService: DarkModeService) { }
 
 
   ngOnInit(): void {
     window.addEventListener('resize', () => {
       // window.innerWidth me obtiene el ancho actual de la ventana
-      if (window.innerWidth < 400) {
+      if (window.innerWidth < 745) {
         this.isClose = true;
       } else {
         this.isClose = false;
