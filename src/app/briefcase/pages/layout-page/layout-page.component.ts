@@ -11,14 +11,15 @@ export class LayoutPageComponent implements OnInit {
   darkModeSelect: boolean = false
   mode = 'Dark'
 
-
-  constructor( private sharedService: DarkModeService) { }
+  constructor(
+    private sharedService: DarkModeService
+  ) { }
 
 
   ngOnInit(): void {
     window.addEventListener('resize', () => {
       // window.innerWidth me obtiene el ancho actual de la ventana
-      if (window.innerWidth < 745) {
+      if (window.innerWidth < 400) {
         this.isClose = true;
       } else {
         this.isClose = false;
