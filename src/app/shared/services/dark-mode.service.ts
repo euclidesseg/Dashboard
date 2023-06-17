@@ -10,7 +10,8 @@ export class DarkModeService implements OnInit {
   private _darkModeIsSelect = new BehaviorSubject<boolean>(false);
   darkModeIsSelect :Observable<boolean> =  this._darkModeIsSelect.asObservable()
 
-
+  // esta injeccion la uso para obtener una referencia al DOM del body y asi asignarle o removele
+  // una clase su uso se ve estableciso en el metodo selecDarkMode
   constructor( @Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit(): void {
