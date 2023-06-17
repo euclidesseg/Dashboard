@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, OnInit } from '@angular/core';
 import { DarkModeService } from 'src/app/shared/services/dark-mode.service';
 
 @Component({
@@ -11,9 +12,7 @@ export class LayoutPageComponent implements OnInit {
   darkModeSelect: boolean = false
   mode = 'Dark'
 
-  constructor(
-    private sharedService: DarkModeService
-  ) { }
+  constructor(    private sharedService: DarkModeService, @Inject(DOCUMENT) private document: Document  ) { }
 
 
   ngOnInit(): void {
@@ -32,6 +31,7 @@ export class LayoutPageComponent implements OnInit {
   }
   openWithSearch() {
    this.isClose = false;
+   this.document.body.classList.remove('closeNav');
   }
   darkMode() {
     const modeObject = this.sharedService.selecDarkMode();
