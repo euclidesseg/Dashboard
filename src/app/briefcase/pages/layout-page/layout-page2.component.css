@@ -52,6 +52,9 @@
 .vela__blue__sidebar li:hover, .vela__blue__sidebar li:focus {
     background-color: var(--surface-d);
 }
+.vela__blue__sidebar .social__media i{
+  color: aliceblue;
+}
 .closeNav {
     width: 75px;
     transition: var(--trans-02);
