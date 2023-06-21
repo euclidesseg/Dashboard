@@ -76,6 +76,9 @@
   left: -1%;
   transition: .5s;
 }
+span{
+  color: rgb(223, 107, 107);
+}
 @media(max-width:517px){
   .form__title{
     font-size: 1rem;

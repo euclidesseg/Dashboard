@@ -1,9 +1,14 @@
-<form class="form" [ngClass]="{'dark':isDarkModeSelect}">
+<form class="form" [ngClass]="{'dark':isDarkModeSelect}" [formGroup]="messageForm" (ngSubmit)="newMessage()">
   <div class="form__container">
     <h2 class="form__title">Contact me</h2>
-    <input type="text" class="form__input"  placeholder="company-name" >
-    <input type="email" class="form__input"  placeholder="email" >
-    <textarea class="form__input form__input--message" placeholder="message"></textarea>
+    <input type="text" class="form__input"  placeholder="company-name" formControlName = "nombreempresa">
+    <span class="form-text text-danger" *ngIf="isInvalidControl('nombreempresa')">{{getControlError('nombreempresa')}}</span>
+
+    <input type="email" class="form__input"  placeholder="email" formControlName = "email" >
+    <span class="form-text text-danger" *ngIf="isInvalidControl('email')">{{getControlError('email')}}</span>
+
+    <textarea class="form__input form__input--message" placeholder="message" formControlName = "message"></textarea>
+    <span class="form-text text-danger" *ngIf="isInvalidControl('message')">{{getControlError('message')}}</span>
     <button type="submit" class="form__cta form__cta--submit"> <span class="action"></span>Send</button>
   </div>
 </form>

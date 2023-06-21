@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { AppRoutingModule } from './app.routing.module';
-import { BriefcaseModule } from './briefcase/briefcase.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,6 +14,7 @@ import { BriefcaseModule } from './briefcase/briefcase.module';
     BrowserModule,
     SharedModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   exports:[
     AppRoutingModule

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DarkModeService } from 'src/app/shared/services/dark-mode.service';
+import { MessageDto } from '../../interfaces/message.interface';
+import { BriefcaseService } from '../../services/briefcase.service';
 
 @Component({
   selector: 'app-about-me',
@@ -8,7 +10,10 @@ import { DarkModeService } from 'src/app/shared/services/dark-mode.service';
 })
 export class AboutMeComponent implements OnInit{
   isDarkSelect:boolean = false
-  constructor(private sharedService:DarkModeService){}
+  constructor(
+    private sharedService:DarkModeService,
+    private messageService: BriefcaseService
+    ){}
 
   ngOnInit(): void {
     this.sharedService.darkModeIsSelect
@@ -16,5 +21,9 @@ export class AboutMeComponent implements OnInit{
 
   }
 
+  onSendMessage(message : MessageDto){
+    this.messageService.addMessage(message)
+    .subscribe(() => '')
+  }
 
 }

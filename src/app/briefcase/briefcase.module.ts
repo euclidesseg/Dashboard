@@ -12,6 +12,7 @@ import { MotivationsPageComponent } from './pages/motivations-page/motivations-p
 import { HobbiesPageComponent } from './pages/hobbies-page/hobbies-page.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BriefcaseService } from './services/briefcase.service';
 
 
 @NgModule({
@@ -33,7 +34,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 
   ],
   exports:[
-    AboutMeComponent
+    AboutMeComponent,
+    ReactiveFormsModule
+  ],
+  providers:[
+    BriefcaseService
   ]
 })
 export class BriefcaseModule { }
