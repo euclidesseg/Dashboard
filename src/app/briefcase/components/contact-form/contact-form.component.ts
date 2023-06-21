@@ -61,7 +61,7 @@ export class ContactFormComponent implements OnInit {
 
   newMessage() {
     if (this.messageForm.invalid) return;
-    // this.onNewMessage.emit(this.currenMessage);
+    this.onNewMessage.emit(this.currenMessage);
     this.messageForm.reset();
   }
 }
