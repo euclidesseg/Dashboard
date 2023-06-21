@@ -25,36 +25,33 @@ export class ContactFormComponent implements OnInit {
   }
 
   public messageForm: FormGroup = this.formBuilder.group({
-    nombreempresa: ['', [Validators.required, Validators.minLength(6)]],
+    nombreempresa: ['', [Validators.required, Validators.minLength(5)]],
     email: ['', [Validators.required, Validators.email]],
-    message: ['', [Validators.required, Validators.minLength(10)]],
+    message: ['', [Validators.required, Validators.minLength(15)]],
   });
 
   isInvalidControl(control: keyof MessageDto): boolean | null {
-    return (
-      this.messageForm.controls[control].errors &&
-      this.messageForm.controls[control].touched
-    );
+    return  this.messageForm.controls[control].errors &&    this.messageForm.controls[control].touched;
   }
 
   getControlError(control: keyof MessageDto): string | null {
     if (!this.messageForm.controls[control].errors) return null;
 
-    const errors = this.messageForm.controls[control].errors || {};
+    else{
+      const errors = this.messageForm.controls[control].errors || {};
 
-    for (const key of Object.keys(errors)) {
-      switch (key) {
-        case 'required':
-          return 'This field is required';
+      for (const key of Object.keys(errors)) {
+        console.log(key)
+        switch (key) {
+          case 'required':
+            return 'This field is required';
 
-        case 'minLength':
-          return  `Minimo ${errors['minlength'].requiredLength} caracteres`;
-
-        case 'email':
-          return 'Invalid email format';
+          case 'minlength':
+            return  `Minimum ${errors['minlength'].requiredLength} characters`;
+        }
       }
+      return '';
     }
-    return '';
   }
 
   get currenMessage(): MessageDto {
@@ -64,7 +61,7 @@ export class ContactFormComponent implements OnInit {
 
   newMessage() {
     if (this.messageForm.invalid) return;
-    this.onNewMessage.emit(this.currenMessage);
+    // this.onNewMessage.emit(this.currenMessage);
     this.messageForm.reset();
   }
 }

@@ -2,10 +2,10 @@
   <div class="form__container">
     <h2 class="form__title">Contact me</h2>
     <input type="text" class="form__input"  placeholder="company-name" formControlName = "nombreempresa">
-    <span class="form-text text-danger" *ngIf="isInvalidControl('nombreempresa')">{{getControlError('nombreempresa')}}</span>
+    <span *ngIf="isInvalidControl('nombreempresa')"class="form-text text-danger">{{getControlError('nombreempresa')}}</span>
 
     <input type="email" class="form__input"  placeholder="email" formControlName = "email" >
-    <span class="form-text text-danger" *ngIf="isInvalidControl('email')">{{getControlError('email')}}</span>
+    <span class="form-text text-danger" *ngIf="isInvalidControl('email')">Invalid email format</span>
 
     <textarea class="form__input form__input--message" placeholder="message" formControlName = "message"></textarea>
     <span class="form-text text-danger" *ngIf="isInvalidControl('message')">{{getControlError('message')}}</span>
