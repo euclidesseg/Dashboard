@@ -28,7 +28,6 @@
   color: #dd1b16;
 }
 .container__paragraphs .i__like, .container__hero .text{
-  margin-top: 15px;
   font-size: 1.3rem;
 }
 .i__like, .container__hero{
@@ -80,15 +79,4 @@
   .i__like  .text__like{
     font-size: 1.5rem;
   }
-}
-.custom-snackbar{
-  display: block;
-  text-align: center;
-  padding-top: 7px;
-  width: 30%;
-  height: auto;
-  min-height: 40px;
-  margin: 0px auto 15px auto;
-  background-color: rgb(39, 177, 85);
-  color: black;
 }

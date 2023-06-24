@@ -13,8 +13,6 @@ import { HobbiesPageComponent } from './pages/hobbies-page/hobbies-page.componen
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BriefcaseService } from './services/briefcase.service';
-import {DialogModule} from '@angular/cdk/dialog';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 
@@ -34,9 +32,6 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     CardModule,
     BriefCaseRoutingModule,
     ReactiveFormsModule,
-    DialogModule,
-    MatSnackBarModule
-
   ],
   exports:[
     AboutMeComponent,

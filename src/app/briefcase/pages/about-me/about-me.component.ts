@@ -3,6 +3,7 @@ import { DarkModeService } from 'src/app/shared/services/dark-mode.service';
 import { MessageDto } from '../../interfaces/message.interface';
 import { BriefcaseService } from '../../services/briefcase.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { ServiceNotifier } from 'src/app/shared/services/notifier.service';
 
 
 @Component({
@@ -11,11 +12,11 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./about-me.component.css']
 })
 export class AboutMeComponent implements OnInit{
-  send : boolean = false
   isDarkSelect:boolean = false
   constructor(
     private sharedService:DarkModeService,
     private messageService: BriefcaseService,
+    private snackbar : ServiceNotifier
     ){}
 
   ngOnInit(): void {
@@ -26,13 +27,10 @@ export class AboutMeComponent implements OnInit{
 
 
   onSendMessage(message : MessageDto):void{
-    this.messageService.addMessage(message)
-    .subscribe((reponse) =>{
-      this.send = true;
-      setTimeout(() => {
-        this.send = false;
-      }, 2500);
-    } )
+    this.snackbar.showNotification(`${message.nombreempresa} Your message has been sent `, 'Ok')
+    // this.messageService.addMessage(message)
+    // .subscribe((reponse) =>{
+    // } )
   }
 
 

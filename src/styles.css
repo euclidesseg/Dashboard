@@ -124,3 +124,21 @@ body {
   color: var(--text-color) !important
   /* transition: var(--trans-05); */
 }
+.notification{
+  background-color: rgb(23, 184, 233);
+}
+
+.cdk-overlay-container{
+  color: white;
+  width: 300px;
+  margin-left: calc(45% - 70px);
+  display: flex;
+  justify-content: center;
+}
+@media(max-whid:300px){
+  .cdk-overlay-container{
+    width: 150px;
+  }
+}
+
+

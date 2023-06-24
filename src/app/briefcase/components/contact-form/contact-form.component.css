@@ -55,29 +55,11 @@
   cursor: pointer;
   height: 45px;
   overflow: hidden;
-}
-.action{
-  transition: .3s;
-  position: absolute;
-  top: 0;
-  left: -100%;
-  border-radius: 10px;
-  height: 100%;
-  width:90%;
-  color: transparent;
+  transition:.3s;
 }
 .form__cta:hover{
-  color: white;
-  transition: .6s;
+  transition: .3s;
   box-shadow: 0px 0px 15px rgba(26, 25, 25, 0.448);
-}
-.form__cta:hover .action{
-  background-color: #56cbfd5f;
-  left: -1%;
-  transition: .5s;
-}
-span{
-  color: rgb(223, 107, 107);
 }
 @media(max-width:517px){
   .form__title{
@@ -88,10 +70,6 @@ span{
     padding: 2.5em 1.5em;
   }
 }
-@media(max-width:339px){
-
-}
-
 .dark{
   background-color: var(--surface-card);
   transition: var(--trans-03);
