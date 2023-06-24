@@ -130,14 +130,15 @@ body {
 
 .cdk-overlay-container{
   color: white;
-  width: 300px;
-  margin-left: calc(45% - 70px);
+  width: 200px;
+  margin-left: calc(55% - 70px);
   display: flex;
   justify-content: center;
 }
-@media(max-whid:300px){
+@media(max-whidth:294px){
   .cdk-overlay-container{
-    width: 150px;
+    width: 80px;
+    margin-left: 80px;
   }
 }
 
