@@ -13,7 +13,7 @@ export class ServiceNotifier {
         message:message,
         buttonText: buttonText
       },
-      duration:80000,
+      duration:2500,
       horizontalPosition:'center',
       verticalPosition:'bottom',
       panelClass: 'notification'

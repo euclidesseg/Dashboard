@@ -27,10 +27,10 @@ export class AboutMeComponent implements OnInit{
 
 
   onSendMessage(message : MessageDto):void{
-    this.snackbar.showNotification(`${message.nombreempresa} Your message has been sent `, 'Ok')
-    // this.messageService.addMessage(message)
-    // .subscribe((reponse) =>{
-    // } )
+    this.messageService.addMessage(message)
+    .subscribe((reponse) =>{
+      this.snackbar.showNotification(`${message.nombreempresa} Your message has been sent `, 'Ok')
+    } )
   }
 
 
