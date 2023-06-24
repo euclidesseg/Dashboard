@@ -81,3 +81,14 @@
     font-size: 1.5rem;
   }
 }
+.custom-snackbar{
+  display: block;
+  text-align: center;
+  padding-top: 7px;
+  width: 30%;
+  height: auto;
+  min-height: 40px;
+  margin: 0px auto 15px auto;
+  background-color: rgb(39, 177, 85);
+  color: black;
+}

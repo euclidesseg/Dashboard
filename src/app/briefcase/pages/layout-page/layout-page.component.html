@@ -6,7 +6,8 @@
         <img src="../../../assets/images/img_perfil.png" alt="logo" class="image__logo">
       </span>
       <div class="text header-text">
-        <span class="name"> Euclides Perez Developer</span>
+        <span class="name"> Euclides Perez </span>
+        <span class="name"> Developer</span>
       </div>
     </div>
     <i class="toggle" (click)="openOrCloseSidebar()">
@@ -16,10 +17,10 @@
 
   <div class="menu__bar">
     <div class="menu">
-      <li class="menu__search">
+      <!-- <li class="menu__search">
         <i class="pi pi-search" (click)="openWithSearch()"></i>
         <input type="search" class="search" placeholder="Search....">
-      </li>
+      </li> -->
       <ul class="menu__list">
         <li class="nav__link" *ngFor="let item of sidebarItems" [routerLink]="item.url">
           <i [ngClass]="item.icon"></i>

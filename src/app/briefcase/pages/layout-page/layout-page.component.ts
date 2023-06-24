@@ -44,7 +44,7 @@ export class LayoutPageComponent implements OnInit {
   public sidebarItems = [
 
     {   label:'About me', icon:'pi pi-user',url:'./about-me'},
-    {   label:'Jobs', icon:'pi pi-briefcase',url:'./my-jobs' },
+    {   label:'Projects', icon:'pi pi-briefcase',url:'./my-projects' },
     {   label:'Studies', icon:'pi pi-book',url:'./studies' },
     {   label:'Experience', icon:'pi pi-globe',url:'./expereicence' },
     {   label:'Motivations', icon:'pi pi-heart-fill',url:'./motivations' },
