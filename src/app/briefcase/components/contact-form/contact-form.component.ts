@@ -60,7 +60,10 @@ export class ContactFormComponent implements OnInit {
   }
 
   newMessage() {
-    if (this.messageForm.invalid) return;
+    if (this.messageForm.invalid) {
+      this.messageForm.markAllAsTouched();
+      return;
+    }
     this.onNewMessage.emit(this.currenMessage);
     this.messageForm.reset();
   }
