@@ -1,79 +1,54 @@
 
 .container {
-  height: 2200px;
-  padding: 5px 0px 10px 0px;
+  height: auto;
+  min-height: 100vh;
+  padding: 5px 15px 10px 0px;
   width: calc(100% - 5px);
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  gap: 10px;
-  row-gap: 50px;
-  grid-template-areas:
-    "work1 work1 work1 work1 work1 work1"
-    "work1 work1 work1 work1 work1 work1"
-    "work2 work2 work2 work2 work2 work2"
-    "work2 work2 work2 work2 work2 work2"
-    "work3 work3 work3 work3 work3 work3"
-    "work3 work3 work3 work3 work3 work3"
-    "work4 work4 work4 work4 work4 work4"
-    "work4 work4 work4 work4 work4 work4"
-  ;
 }
-
-.work {
-  height: 200px;
-  align-items: center;
+.container .work{
+  margin: auto;
+  width: 80%;
+  height: auto;
+  min-height: 404px;
   display: grid;
+  border-radius: 5px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  padding-left: 5px;
-  padding-right: 13px;
+  margin-bottom: 100px;
+  padding: 15px;
 }
-
-.work1 {
-  /* background-color: rgb(102, 90, 205); */
-  grid-area: work1;
-}
-
-.work2 {
-  /* background-color: aquamarine; */
-  grid-area: work2;
-}
-
-.work3 {
-  /* background-color: rgb(237, 101, 187); */
-  grid-area: work3;
-}
-.work4 {
-  /* background-color: rgb(86, 151, 225); */
-  grid-area: work4;
-}
-.work__img{
-display: flex;
-  align-items: center;
+.work__image, .work__parragraphs{
+  display: flex;
   justify-content: center;
-}
-.work__paragraphs{
-  position: relative;
-  top: 0;
   align-items: center;
-  justify-content: center;
+  padding: 10px;
+}
 
+.work .work__image{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  min-height: 204px;
+  width: 100%;
+}
+.work1 .work__image{
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/multimedia-project-15028.appspot.com/o/modeloUsuario.png?alt=media&token=6f50bcf8-543c-4315-8521-8bedbecac863);
+}
+.work2 .work__image{
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/multimedia-project-15028.appspot.com/o/motoservice.png?alt=media&token=b3515880-74e6-41aa-88d4-69aaa2332110);
+}
+.work3 .work__image{
+ background-image: url(https://firebasestorage.googleapis.com/v0/b/multimedia-project-15028.appspot.com/o/servicereserva.png?alt=media&token=bb5f889f-66e8-4d5b-b7e1-c98c461891b2);
+}
+.work__parragraphs{
+  background-color: rgb(200, 217, 243);
+  text-align:start;
   color: black;
 }
-
-.work__img img{
-  max-width: 100%;
-  height: auto;
-  max-height: 80%;
-  border-radius: 5px;
+.work__image img{
+  height: 90%;
+  width:100%;
+  border-radius: 2px;
 }
-.texts{
-  max-width: 100%;
-  max-height: 70%;
-  border-radius: 5px;
-}
-
 .github__cta{
   text-decoration: none;
   width: auto;
@@ -89,36 +64,4 @@ display: flex;
   border-radius: 25px;
   background-color: var(--spring-boot);
   overflow: hidden;
-}
-
-@media(min-width:950px) {
-  .container {
-    grid-template-areas:
-      "work1 work1 work1 work2 work2 work2"
-      "work1 work1 work1 work2 work2 work2"
-      "work1 work1 work1 work2 work2 work2"
-      "work1 work1 work1 work2 work2 work2"
-      "work3 work3 work3 work4 work4 work4"
-      "work3 work3 work3 work4 work4 work4"
-      "work3 work3 work3 work4 work4 work4"
-      "work3 work3 work3 work4 work4 work4"
-    ;
-    gap: 10px;
-    height: 1200px;
-  }
-  .work{
-    height: auto;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-}
-@media(min-width:1127px) {
-  .container{
-    height: 700px;
-  }
-}
-@media(min-width:745px) {
-  .container {
-    width: calc(100% - 16px);
-  }
 }

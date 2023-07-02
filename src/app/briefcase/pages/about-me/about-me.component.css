@@ -6,14 +6,12 @@
   overflow-y: auto;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0px 15px 0px 5px;
 
 }
 .container .section{
   width: 500px;
   height: auto;
   display: flex;
-  padding: 5px;
   margin-bottom: 50px;
   transition: var(--trans-03);
 }
