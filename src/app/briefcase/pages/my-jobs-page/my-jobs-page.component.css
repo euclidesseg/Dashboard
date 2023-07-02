@@ -1,48 +1,86 @@
 
-.container{
-  margin-top: 50px;
-}
-.section__container {
+.container {
+  height: 2200px;
+  padding: 10px 0px 10px 0px;
+  width: calc(100% - 5px);
   display: grid;
-  height: auto;
-  flex-wrap: wrap;
-  height: 100%;
-  margin-bottom: 55px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 10px;
+  row-gap: 50px;
+  grid-template-areas:
+    "work1 work1 work1 work1 work1 work1"
+    "work1 work1 work1 work1 work1 work1"
+    "work2 work2 work2 work2 work2 work2"
+    "work2 work2 work2 work2 work2 work2"
+    "work3 work3 work3 work3 work3 work3"
+    "work3 work3 work3 work3 work3 work3"
+    "work4 work4 work4 work4 work4 work4"
+    "work4 work4 work4 work4 work4 work4"
+  ;
 }
 
 .work {
-  width: 100%;
+  height: 400px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding-left: 5px;
+  padding-right: 13px;
+}
+
+.work1 {
+  /* background-color: rgb(102, 90, 205); */
+  grid-area: work1;
+}
+
+.work2 {
+  /* background-color: aquamarine; */
+  grid-area: work2;
+}
+
+.work3 {
+  /* background-color: rgb(237, 101, 187); */
+  grid-area: work3;
+}
+.work4 {
+  /* background-color: rgb(86, 151, 225); */
+  grid-area: work4;
+}
+.work__img{
   display: flex;
-  margin: 0px auto 100px auto;
-  flex-direction: column;
-  text-align: center;
-  transition: var(--trans-02);
-}
-.work__img img {
+  width: auto;
   max-width: 100%;
-  height: 100%;
-  border-radius: 5px;
-}
-.work__title{
-  margin-bottom: 10px;
-  margin-top: 10px;
-  font-size: 1.7rem;
-}
-.work__title, .github__cta{
-  color: var(--spring-boot);
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  max-height: 90%;
 }
 .work__paragraphs{
-  text-align:left;
-  padding: 5px;
-  width: 90%;
-  margin: auto;
-  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  max-height: 100%;
+  max-width: 90%;
+
 }
-.paragraph{
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+
+.work__img img{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
 }
+.texts{
+  margin-top: 10px;
+  max-width: 100%;
+  max-height: 70%;
+  border-radius: 5px;
+  /* margin-left: 13px; */
+}
+
 .github__cta{
   text-decoration: none;
   width: auto;
@@ -59,50 +97,35 @@
   background-color: var(--spring-boot);
   overflow: hidden;
 }
-.github__cta:hover{
-  background-color: #51a419;
-  box-shadow: 0px 0cm 10px rgb(81, 79, 79);
-  transition: var(--trans-02);
 
-}
-@media (min-width: 700px) {
-  .work {
-    display: grid;
-    width: auto;
-    max-width: 95%;
-    overflow: hidden;
+@media(min-width:950px) {
+  .container {
+    grid-template-areas:
+      "work1 work1 work1 work2 work2 work2"
+      "work1 work1 work1 work2 work2 work2"
+      "work1 work1 work1 work2 work2 work2"
+      "work1 work1 work1 work2 work2 work2"
+      "work3 work3 work3 work4 work4 work4"
+      "work3 work3 work3 work4 work4 work4"
+      "work3 work3 work3 work4 work4 work4"
+      "work3 work3 work3 work4 work4 work4"
+    ;
+    gap: 10px;
+    height: 1200px;
+  }
+  .work{
     height: auto;
-    max-height: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
-    transition: var(--trans-02);
-  }
-
-  .work__paragraphs{
-    margin: auto;
-    height: auto;
-  }
-  .work__img{
-    height: 90%;
-    width: 90%;
-    margin:auto;
-    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
 }
-@media (max-width: 915px) {
-  /* .work__img img{
-    height: 70%;
-  } */
+@media(min-width:1127px) {
+  .container{
+    height: 700px;
+  }
 }
-@media (max-width: 700px) {
-  .work {
-    width: 90%;
-    transition: var(--trans-02);
+@media(min-width:745px) {
+  .container {
+    width: calc(100% - 16px);
   }
-  .work__img img{
-    width: 90%;
-  }
-
-
 }

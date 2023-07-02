@@ -93,16 +93,16 @@
 
 .sidebar ~ .home {
     position: fixed;
-    margin-left: 260px;
+    margin-left: 250px;
     height: 100%;
-    width: calc(100% - 240px);
+    width: calc(100% - 230px);
     overflow-y: auto;
     transition: var(--trans-03);
 }
 
 .closeNav ~ .home {
     margin-left: 75px;
-    width: calc(100% - 70px);
+    width: calc(100% - 55px);
 }
 
 .vela__blue__sidebar ~ .social__media{
