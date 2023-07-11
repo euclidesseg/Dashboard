@@ -6,13 +6,14 @@
   overflow-y: auto;
   align-items: center;
   justify-content: space-evenly;
-
+  padding: 15px;
 }
 .container .section{
   width: 500px;
   height: auto;
   display: flex;
   margin-bottom: 50px;
+  margin-left: 15px;
   transition: var(--trans-03);
 }
 .container .container__paragraphs {
@@ -21,22 +22,17 @@
   flex-direction: column;
   margin-bottom: 55px;
 }
-.container__paragraphs .i__texts{
-  font-size: 1.7rem;
-  color: #dd1b16;
-}
-.container__paragraphs .i__like, .container__hero .text{
+.parragraphs{
   font-size: 1.3rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
-.i__like, .container__hero{
-  color: var(--surface-f);
+.parragraphs .text__title{
+  font-size: 2.5rem;
+  color: #1aa7f3;
 }
-.i__like .text__like , .container__hero .text__know{
-  color: var(--spring-boot);
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
+
 .container .container__img {
   display: flex;
   justify-content: center;
@@ -49,11 +45,8 @@
 .container__img img {
   height: 100%;
   width: auto;
-  max-width: 90%;
-  min-width: 150px;
+  max-width: 80%;
   transition: var(--trans-05);
-  position: relative;
-  left: 5px;
   top: 15px;
   box-shadow: 10px 10px 35px rgba(15, 15, 15, 15);
 }
@@ -62,20 +55,11 @@
   width: 700px;
 }
 .section__form app-contact-form{
-  width: 100%;
+  width: 80%;
+  height: 80%;
+  margin: auto;
 }
 
 @media(max-width: 365px){
-  .container__paragraphs{
-    margin-left: 10px;
-  }
-  .container__paragraphs .i__texts{
-    font-size: 1.1rem;
-  }
-  .container__paragraphs .i__like, .container__hero .text{
-    font-size: 16px;
-  }
-  .i__like  .text__like{
-    font-size: 1.5rem;
-  }
+
 }

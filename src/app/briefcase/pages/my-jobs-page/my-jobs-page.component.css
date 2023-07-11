@@ -40,7 +40,7 @@
  background-image: url(https://firebasestorage.googleapis.com/v0/b/multimedia-project-15028.appspot.com/o/servicereserva.png?alt=media&token=bb5f889f-66e8-4d5b-b7e1-c98c461891b2);
 }
 .work__parragraphs{
-  background-color: rgb(200, 217, 243);
+  background-color: rgb(207, 221, 243);
   text-align:start;
   color: black;
 }
@@ -64,4 +64,8 @@
   border-radius: 25px;
   background-color: var(--spring-boot);
   overflow: hidden;
+}
+
+.dark .work .work__parragraphs{
+  background-color: var(--surface-d);
 }

@@ -1,30 +1,28 @@
 <div class="container">
   <div class="section container__paragraphs">
-    <div class="i__texts">
-      <h1 class="text text__title">I'm Euclides Perez</h1>
-      <h1 class="text text__profesion">Backend <span style="color: #6DB33F;;">|</span>Frontend <span>Developer</span></h1>
-    </div>
-    <div class="i__like">
-      <p class="text__like">And i wolk like to work on your next proyect</p>
-      <p class="text" [ngClass]="{'darkText':isDarkSelect}"> I would love to be the first option for your vacancy and
-        work alongside your team during the rest of the project and many more, so that I can move forward and learn</p>
+    <div class="parragraphs">
+      <p class="text text__title">Bienvenido.</p>
+      <hr>
+      <p [ngClass]="{'darkText':isDarkSelect}">
+        Mi nombre es Euclides Pérez, un apasionado desarrollador Junior fullstack con un enfoque especializado en el desarrollo de back-end. Mi objetivo es crear soluciones robustas y eficientes para impulsar el éxito de los proyectos en los que trabajo.
+      </p>
     </div>
   </div>
 
   <div class="section container__img">
-      <img src="assets/images/fullstak.webp">
+    <img src="assets/images/fullstak.webp">
   </div>
 
   <div class=" section container__hero">
-    <div class="i__like">
-      <p class="text__know">Know me a little</p>
-      <p class="text" [ngClass]="{'darkText':isDarkSelect}" >
-        I am a software technician and I am studying the first semester of engineering,
-        I love my job and I love learning from it, I am passionate about programming and everything related to
-        technology, since I was a child I always wanted to have a superpower and programming is the best of all
+    <div class="parragraphs">
+      <p class="text text__title">Mas sobre mi.</p>
+      <hr>
+      <p [ngClass]="{'darkText':isDarkSelect}">
+        Soy técnico en desarrollo de software y estudiante de Ingeniería. Estoy emocionado por enfrentar nuevos retos que me permitan crecer profesionalmente. Estoy comprometido con la excelencia en el desarrollo de software y siempre busco oportunidades para mejorar mis habilidades y conocimientos.
       </p>
     </div>
   </div>
+
   <div class="section section__form">
     <app-contact-form (onNewMessage)="onSendMessage($event)"></app-contact-form>
   </div>
