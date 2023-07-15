@@ -25,30 +25,28 @@
 
 .work .work__image{
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center center;
   height: auto;
   min-height: 204px;
   width: 100%;
 }
 .work1 .work__image{
   background-image: url(https://firebasestorage.googleapis.com/v0/b/multimedia-project-15028.appspot.com/o/modeloUsuario.png?alt=media&token=6f50bcf8-543c-4315-8521-8bedbecac863);
+
 }
 .work2 .work__image{
   background-image: url(https://firebasestorage.googleapis.com/v0/b/multimedia-project-15028.appspot.com/o/motoservice.png?alt=media&token=b3515880-74e6-41aa-88d4-69aaa2332110);
 }
 .work3 .work__image{
- background-image: url(https://firebasestorage.googleapis.com/v0/b/multimedia-project-15028.appspot.com/o/servicereserva.png?alt=media&token=bb5f889f-66e8-4d5b-b7e1-c98c461891b2);
+ background-image: url(https://firebasestorage.googleapis.com/v0/b/multimedia-project-15028.appspot.com/o/servicereserva.png?alt=media&token=b620cb20-b3ab-461a-941d-219e3b95704f);
 }
 .work__parragraphs{
   background-color: rgb(207, 221, 243);
   text-align:start;
   color: black;
 }
-.work__image img{
-  height: 90%;
-  width:100%;
-  border-radius: 2px;
-}
+
 .work__title{
   color: #1aa7f3;
   margin-bottom: 10px;
@@ -69,24 +67,26 @@
   background-color: var(--spring-boot);
   overflow: hidden;
 }
-
+.github__cta:hover{
+  box-shadow: 0px 0px 10px rgb(36, 34, 34);
+}
 .dark .work .work__parragraphs{
   background-color: var(--surface-d);
 }
 
 .skills{
-  width: 90%;
+  width: 100%;
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 .skills span{
   color: black;
-  padding-top: 5px;
-  font-size: 12px;
+  padding: 5px 2px 2px 0px;
+  font-size: 11px;
   width: auto;
+  text-align: center;
   min-width: 80px;
   font-weight: bold;
   height: auto;
@@ -95,4 +95,14 @@
   margin-right: 5px;
   margin-top: 5px;
   border-radius: 10px;
+}
+@media(max-width:1068px){
+  .container .work{
+    width: 95%;
+  }
+}
+@media(max-width:700px){
+  .container .work{
+    width: 100%;
+  }
 }

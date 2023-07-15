@@ -21,7 +21,7 @@ export class LayoutPageComponent implements OnInit {
   ngOnInit(): void {
     window.addEventListener('resize', () => {
       // window.innerWidth me obtiene el ancho actual de la ventana
-      if (window.innerWidth < 745) {
+      if (window.innerWidth < 975) {
         this.isClose = true;
       } else {
         this.isClose = false;

@@ -1,12 +1,13 @@
 /* ====== Sidebar text image ======= */
 .sidebar .text {
   font-size: 1rem;
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-  transition: var(--trans-02);
+  overflow: hidden;
 }
-
+.header-text{
+  width: 400px;
+  font-weight: 600;
+  color: black;
+}
 .sidebar .image {
   min-width: 60px;
   display: flex;
@@ -76,24 +77,13 @@
 }
 
 
-header .image-text .header-text {
-  display: flex;
-  flex-direction: column;
-  transition: var(--trans-03);
-}
-
 header .image-text .image__logo {
   width: 42px;
   height: 40px;
   margin-left: 1px;
 }
 
-.header-text .name {
-  margin: -2px;
-  font-weight: 600;
-  width: auto;
-  color: black;
-}
+
 
 .sidebar header .toggle {
   position: absolute;
