@@ -57,7 +57,6 @@ hr{
 }
 .section__form{
   overflow: hidden;
-  width: 700px;
 }
 .section__form app-contact-form{
   width: 70%;
