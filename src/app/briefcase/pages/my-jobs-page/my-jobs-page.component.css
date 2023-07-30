@@ -1,20 +1,26 @@
 
-.container {
+.container{
   height: auto;
   min-height: 100vh;
-  padding: 5px 15px 10px 0px;
-  width: calc(100% - 5px);
+  width: calc(100% - 16px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container .work{
-  margin: auto;
   width: 80%;
   height: auto;
   min-height: 404px;
   display: grid;
   border-radius: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin-bottom: 100px;
-  padding: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 100px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.container .work1{
+  margin-top: 15px;
 }
 .work__image, .work__parragraphs{
   display: flex;
@@ -96,13 +102,23 @@
   margin-top: 5px;
   border-radius: 10px;
 }
-@media(max-width:1068px){
+@media(max-width:1080px){
   .container .work{
     width: 95%;
   }
 }
-@media(max-width:700px){
+
+@media(max-width:743px){
   .container .work{
-    width: 100%;
+    width: 60%;
+  }
+}
+@media(max-width:453px){
+  .container{
+    align-items: start;
+    padding-left: 40px;
+  }
+  .container .work{
+    width: 40%;
   }
 }
