@@ -4,19 +4,18 @@ import { DarkModeService } from 'src/app/shared/services/dark-mode.service';
 @Component({
   selector: 'app-layout-page',
   templateUrl: './layout-page.component.html',
-  styleUrls: ['./layout-page.component.css', './layout-page2.component.css']
+  styleUrls: ['./layout-page.component.css', './layout-page2.component.css'],
 })
 export class LayoutPageComponent implements OnInit {
   isClose: boolean = false;
-  darkModeSelect: boolean = false
-  mode = 'Dark'
+  darkModeSelect: boolean = false;
+  mode = '';
 
   // esta injeccion la uso para obtener una referencia al DOM del body y asi asignarle o removele
   // una clase su uso se ve estableciso en el metodo darkMode
-  constructor(
-    private sharedService: DarkModeService
-  ) { }
-
+  constructor(private sharedService: DarkModeService) {
+    this.sharedService.darkModeIsSelect.subscribe((value) =>  {this.darkModeSelect = value.dark, this.mode = value.modeText})
+  }
 
   ngOnInit(): void {
     window.addEventListener('resize', () => {
@@ -33,20 +32,17 @@ export class LayoutPageComponent implements OnInit {
     this.isClose = !this.isClose;
   }
   openWithSearch() {
-   this.openOrCloseSidebar()
+    this.openOrCloseSidebar();
   }
   darkMode() {
-    const modeObject = this.sharedService.selecDarkMode();
-    this.darkModeSelect = modeObject.isActive;
-    this.mode = modeObject.modeText;
+   this.sharedService.selecDarkMode();
   }
 
   public sidebarItems = [
-
-    {   label:'About me', icon:'pi pi-user',url:'./about-me'},
-    {   label:'Projects', icon:'pi pi-briefcase',url:'./my-projects' },
-    {   label:'Studies', icon:'pi pi-book',url:'./studies' },
-    {   label:'Experience', icon:'pi pi-globe',url:'./expereicence' },
-    {   label:'Motivations', icon:'pi pi-heart-fill',url:'./motivations' },
-  ]
+    { label: 'About me', icon: 'pi pi-user', url: './about-me' },
+    { label: 'Projects', icon: 'pi pi-briefcase', url: './my-projects' },
+    { label: 'Studies', icon: 'pi pi-book', url: './studies' },
+    { label: 'Experience', icon: 'pi pi-globe', url: './expereicence' },
+    { label: 'Motivations', icon: 'pi pi-heart-fill', url: './motivations' },
+  ];
 }

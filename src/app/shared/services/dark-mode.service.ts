@@ -1,33 +1,53 @@
 import { DOCUMENT } from '@angular/common';
-import { Injectable, OnInit, Inject} from '@angular/core';
+import { Injectable, OnInit, Inject } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
+export interface Mode {
+  dark: boolean;
+  modeText: string;
+}
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DarkModeService implements OnInit {
-
-  private _darkModeIsSelect = new BehaviorSubject<boolean>(false);
-  darkModeIsSelect :Observable<boolean> =  this._darkModeIsSelect.asObservable()
+  private _darkModeIsSelect = new BehaviorSubject<Mode>({dark:false, modeText:'Light'});
+  darkModeIsSelect: Observable<Mode> = this._darkModeIsSelect.asObservable();
 
   // esta injeccion la uso para obtener una referencia al DOM del body y asi asignarle o removele
   // una clase su uso se ve estableciso en el metodo selecDarkMode
-  constructor( @Inject(DOCUMENT) private document: Document) { }
-
-  ngOnInit(): void {
+  constructor(@Inject(DOCUMENT) private document: Document) {
+    // Leer el valor almacenado en el Local Storage
+    const modeSelected = localStorage.getItem('modeSelected');
+    if (modeSelected) {
+      try {
+        const mode:Mode = JSON.parse(modeSelected);
+        this._darkModeIsSelect.next(mode);
+        if(mode.dark){
+          this.document.body.classList.add('vela__blue')
+        } else{
+          this.document.body.classList.remove('vela__blue')
+        }
+      } catch (error) {
+        console.error('Error parsing stored value:', error);
+      }
+    }
   }
 
-   selecDarkMode(): { isActive: boolean, modeText: string } {
-    const isActive = !this._darkModeIsSelect.value;
+  ngOnInit(): void {
+
+  }
+
+  selecDarkMode(){
+
+    const isActive = !this._darkModeIsSelect.value.dark;
     if (isActive) {
       this.document.body.classList.add('vela__blue');
-      this._darkModeIsSelect.next(true);
-      return { isActive: true, modeText: 'Light' };
+      this._darkModeIsSelect.next({dark:true, modeText:'Light'});
     } else {
       this.document.body.classList.remove('vela__blue');
-      this._darkModeIsSelect.next(false);
-      return { isActive: false, modeText: 'Dark' };
+      this._darkModeIsSelect.next({dark:false, modeText:'Dark'});
     }
+    localStorage.setItem('modeSelected', JSON.stringify( this._darkModeIsSelect.value));
   }
 }
 
@@ -40,7 +60,6 @@ export class DarkModeService implements OnInit {
 
 // . El método asObservable() de la clase BehaviorSubject crea y devuelve un observable que emite el último valor emitido por el objeto
 // en este caso el objeto es  _darkModeIsSelect
-
 
 // constructor(
 //  @Inject(DOCUMENT) private document: Document,

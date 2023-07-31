@@ -88,21 +88,19 @@ header .image-text .image__logo {
 .sidebar header .toggle {
   position: absolute;
   top: 120%;
-  right: -25px;
-  height: 20px;
-  width: 20px;
+  right: -60px;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
   transform: translateY(-50px);
-  background-color: var(--primary-color);
+  border: 1px solid black;
+  border-radius: 5px;
   display: flex;
+  z-index: 10;
   align-items: center;
   justify-content: center;
 }
 
-header .toggle .toggle__image {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
 
 li {
   cursor: pointer;

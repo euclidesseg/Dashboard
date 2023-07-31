@@ -21,7 +21,7 @@ export class AboutMeComponent implements OnInit{
 
   ngOnInit(): void {
     this.sharedService.darkModeIsSelect
-    .subscribe((value) => {this.isDarkSelect = value})
+    .subscribe((value) => {this.isDarkSelect = value.dark})
 
   }
 

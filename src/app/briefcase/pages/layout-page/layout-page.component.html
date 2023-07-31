@@ -3,7 +3,7 @@
   <header>
     <div class="image-text">
       <span class="image">
-        <img src="../../../assets/images/img_perfil.png" alt="logo" class="image__logo">
+        <img src="assets/images/img_perfil.png" alt="logo" class="image__logo">
       </span>
       <div>
         <div class="text header-text">
@@ -15,9 +15,10 @@
       </div>
     </div>
 
-    <i class="toggle" (click)="openOrCloseSidebar()">
-      <img src="assets/images/menu.svg" alt="" class="toggle__image">
-    </i>
+    <span class="toggle" (click)="openOrCloseSidebar()">
+      <!-- <img src="assets/images/menu.svg" alt="" class="toggle__image"> -->
+      <i class="bi bi-layout-sidebar-inset-reverse" [ngClass]="{'bi-layout-sidebar-inset': isClose}"></i>
+    </span>
   </header>
 
   <div class="menu__bar">
@@ -39,9 +40,10 @@
     <div class="bottom__content">
 
       <div class="social__media">
-        <a href="https://github.com/euclidesseg" target = "_blank"><i class="pi pi-github"></i></a>
-        <a href="https://www.linkedin.com/in/euclides-perez-55329b196/" target = "_blank"><i class="pi pi-linkedin"></i></a>
-        <a href="mailto:euclides2696@gmail.com" target = "_blank"><i class="pi pi-google"></i></a>
+        <a href="https://github.com/euclidesseg" target="_blank"><i class="pi pi-github"></i></a>
+        <a href="https://www.linkedin.com/in/euclides-perez-55329b196/" target="_blank"><i
+            class="pi pi-linkedin"></i></a>
+        <a href="mailto:euclides2696@gmail.com" target="_blank"><i class="pi pi-google"></i></a>
       </div>
       <!-- <li class="log">
                     <i class="pi pi-power-off"></i>

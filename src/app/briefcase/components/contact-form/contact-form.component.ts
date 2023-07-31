@@ -20,7 +20,7 @@ export class ContactFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.darkModeService.darkModeIsSelect.subscribe(
-      (value) => (this.isDarkModeSelect = value)
+      (value) => (this.isDarkModeSelect = value.dark)
     );
   }
 

@@ -1,4 +1,10 @@
 /* clases conditionals */
+.vela__blue__sidebar header .toggle{
+  border: 1px solid white;
+}
+.vela__blue__sidebar .toggle i {
+  color: aliceblue;
+}
 .sidebar li a .nav__text__white {
     color: white;
 }
