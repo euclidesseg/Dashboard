@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@300;400;700&family=Roboto+Flex:wght@200;400;500;600&family=Roboto:wght@400;500;700&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:wght@300;400;700&family=Roboto+Flex:wght@200;400;500;600&family=Roboto+Mono:wght@200;400;500&family=Roboto:wght@400;500;700&family=Source+Code+Pro:wght@200;400;600;800&display=swap');
 
 * {
   font-family: 'montserrat', sans-serif;
@@ -16,6 +17,7 @@
   /* fonts */
   --roboto: 'Roboto', sans-serif;
   --roboto-mono: 'Roboto Mono', monospace;
+  --source-code: 'Source Code Pro', monospace;
 
   /* transitions */
   --trans-02: all 0.2s ease;
@@ -38,7 +40,7 @@
   --surface-f: #0c1219;
   --text-color: rgba(255, 255, 255, 0.87);
   --text-color-secondary: rgba(255, 255, 255, 0.6);
-  --primary-color: #64B5F6;
+  --button-color:#4943f4;
   --primary-color-text: #212529;
   --font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   --gray-50: #e8e9ea;

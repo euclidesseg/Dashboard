@@ -93,14 +93,16 @@ header .image-text .image__logo {
   height: 35px;
   width: 35px;
   transform: translateY(-50px);
-  border: 1px solid black;
+  border: 1px solid rgb(128, 121, 121);
   border-radius: 5px;
   display: flex;
   z-index: 10;
   align-items: center;
   justify-content: center;
 }
-
+.toggle .bi{
+  color: rgb(65, 65, 70);
+}
 
 li {
   cursor: pointer;
@@ -148,7 +150,7 @@ li {
 
 .sidebar li:hover,
 .sidebar li:focus {
-  background-color: var(--primary-color);
+  background-color: var(--bodi-color);
   color: white;
 
 }

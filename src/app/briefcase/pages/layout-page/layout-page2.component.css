@@ -1,9 +1,13 @@
 /* clases conditionals */
 .vela__blue__sidebar header .toggle{
-  border: 1px solid white;
+  border: 1px solid rgb(146, 141, 141);
 }
+.vela__blue__sidebar header .toggle .bi{
+  color: rgb(196, 219, 240);
+}
+
 .vela__blue__sidebar .toggle i {
-  color: aliceblue;
+  color: rgb(216, 233, 249);
 }
 .sidebar li a .nav__text__white {
     color: white;
