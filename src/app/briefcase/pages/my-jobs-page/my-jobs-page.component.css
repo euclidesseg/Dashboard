@@ -65,15 +65,14 @@
   overflow: hidden;
 }
 .github__cta i{
-  margin-top: 20px;
+  margin-top: 50px;
   color: black;
-  font-size: 1.7rem;
-  position: absolute;
+  font-size: 2rem;
   bottom: 15px;
 }
 .github__cta:hover i{
-  font-size: 1.9rem;
-  transition: var(--trans-02);
+  rotate: 1 2 1 360deg;
+    transition: 1s;
 }
 .dark .work .work__parragraphs{
   background-color: var(--surface-e);

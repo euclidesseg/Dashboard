@@ -4,13 +4,13 @@
   height: auto;
   min-height: 100vh;
   padding-right: 30px;
-  width: calc(100% - 15px);
+  width: calc(100% + 10px);
 }
 
 .container .hellow {
   width: 100%;
   height: auto;
-  margin: 100px 20px 100px 20px;
+  margin: 100px auto 100px auto;
   margin-bottom: 80px;
   min-height: 400px;
   max-height: 700px;
@@ -91,6 +91,7 @@
   font-family: var(--roboto-mono);
   font-weight: 400;
   color: aliceblue;
+  overflow: hidden;
   border-style: none;
   background-color: var(--button-color)
 }
@@ -105,13 +106,13 @@
 /* ====================================== */
 .container .about__me{
   background-color: var(--sidebar-color);
-  margin: 150px 20px 50px 15px;
+  margin: 150px auto 50px auto;
   border-radius: 5px;
-  width: 100%;
+  width: 90%;
   padding: 50px;
   height: auto;
   display: flex;
-  gap: 80px;
+  gap: 30px;
 }
 .about__me .about__me__image{
   height: auto;
@@ -150,6 +151,9 @@
   .container .about__me{
     flex-direction: column;
     height: auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .about__me .about__me__image{
     width: 100%;
@@ -179,6 +183,9 @@
   }
   .button__cv{
     justify-content: center;
+  }
+  .about__me{
+    width: 100%;
   }
 
 }

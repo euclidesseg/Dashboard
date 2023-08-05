@@ -253,3 +253,6 @@ li {
   transition: var(--trans-03);
   background-color: var(--surface-d);
 }
+@media(max-width:460px){
+  .sidebar .image{}
+}
