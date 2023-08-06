@@ -5,15 +5,15 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .container .work{
+  overflow: hidden;
   width: 80%;
   height: auto;
   margin: 100px auto 10px auto;
   min-height: 360px;
-  max-height: 400px;
   display: grid;
   border-radius: 5px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -24,6 +24,7 @@
   margin-top: 15px;
 }
 .work__image, .work__parragraphs{
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +53,7 @@
 .work__parragraphs{
   background-color: var(--sidebar-color);
   text-align:start;
-  color: var(--paragraph-black-black);
+  color: var(--paragraph-black);
 }
 
 .work__title{
@@ -105,23 +106,26 @@ color: var(--paragraph-white);
 }
 @media(max-width:1080px){
   .container .work{
-    /* width: 95%; */
+    width: 95%;
   }
 }
 
 @media(max-width:743px){
   .container .work{
-    width: 60%;
-    max-height: 800px;
+    width: 65%;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   }
+
 }
 @media(max-width:453px){
   .container{
     justify-content: c;
   }
   .container .work{
-    margin-left: 35px;
+    width: 80%;
     transition: 1s;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+
   }
 }
 

@@ -93,6 +93,7 @@
 }
 
 .button__cv a {
+  height: auto;
   height: 40px;
   width: auto;
   padding: 8px;
