@@ -6,7 +6,7 @@
 .header-text{
   width: 400px;
   font-weight: 600;
-  color: black;
+  color: var(--paragraph-black);
 }
 .sidebar .image {
   min-width: 60px;
@@ -54,7 +54,7 @@
 
 .sidebar .menu__bar i,
 .bottom__content i {
-  color: black;
+  color: var(--paragraph-black);
 }
 
 .menu__bar {
@@ -133,25 +133,25 @@ li {
   outline: none;
   border: none;
   padding: 5px;
-  color: black;
+  color: var(--paragraph-black);
   background-color: var(--primary-color-ligth);
   transition: var(--trans-03);
 }
 
 .menu li .search::placeholder {
-  color: rgb(18, 18, 19);
+  color: var(--paragraph-black);
 }
 
 
 .sidebar li .nav__text {
   margin-left: 25px;
-  color: black;
+  color: var(--paragraph-black);
 }
 
 .sidebar li:hover,
 .sidebar li:focus {
   background-color: var(--bodi-color);
-  color: white;
+  color: var(--paragraph-white);
 
 }
 
@@ -221,7 +221,7 @@ li {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 5px 0px 15px 15px ;
-  color: black;
+  color: var(--paragraph-black);
 }
 .social__media i{
   font-size: 1.2rem;

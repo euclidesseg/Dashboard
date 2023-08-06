@@ -2,7 +2,7 @@
 .container{
   height: auto;
   min-height: 100vh;
-  width: calc(100% - 16px);
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,14 +11,14 @@
 .container .work{
   width: 80%;
   height: auto;
+  margin: 100px auto 10px auto;
   min-height: 360px;
   max-height: 400px;
   display: grid;
   border-radius: 5px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-top: 100px;
-  margin-bottom: 10px;
-  gap: 10px;
+
+  /* gap: 10px; */
 }
 .container .work1{
   margin-top: 15px;
@@ -52,12 +52,13 @@
 .work__parragraphs{
   background-color: var(--sidebar-color);
   text-align:start;
-  color: black;
+  color: var(--paragraph-black-black);
 }
 
 .work__title{
-  color: #1aa7f3;
-  font-size: 2rem;
+  color: var(--button-color);
+  text-transform: uppercase ;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
@@ -66,8 +67,8 @@
 }
 .github__cta i{
   margin-top: 50px;
-  color: black;
-  font-size: 2rem;
+  color: var(--paragraph-black);
+  font-size: 1.5rem;
   bottom: 15px;
 }
 .github__cta:hover i{
@@ -78,7 +79,7 @@
   background-color: var(--surface-e);
 }
 .dark .github__cta i{
-  color: aliceblue;
+color: var(--paragraph-white);
 }
 
 .skills{
@@ -89,22 +90,22 @@
   justify-content: start;
 }
 .skills span{
-  color: rgb(230, 220, 220);
-  padding: 5px 2px 2px 0px;
+  color: var(--button-color);
+  padding: 8px 15px 2px 15px;
   font-size: 11px;
   width: auto;
   text-align: center;
-  min-width: 85px;
   height: auto;
-  min-height: 25px;
-  background: var(--surface-d);
+  font-weight: 800;
+  min-height: 30px;
+  background: #b5b4f973;
   margin-right: 10px;
   margin-top: 5px;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 @media(max-width:1080px){
   .container .work{
-    width: 95%;
+    /* width: 95%; */
   }
 }
 
@@ -116,10 +117,17 @@
 }
 @media(max-width:453px){
   .container{
-    align-items: start;
-    padding-left: 40px;
+    justify-content: c;
   }
   .container .work{
-    width: 40%;
+    margin-left: 35px;
+    transition: 1s;
   }
+}
+
+.dark .work__parragraphs .work__title{
+  color: var(--paragraph-white);
+}
+.dark .skills span{
+  color: var(--paragraph-white);
 }

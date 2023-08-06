@@ -33,7 +33,4 @@ export class AboutMeComponent implements OnInit{
     } )
   }
 
-  openPdf(){
-    window.open('https://firebasestorage.googleapis.com/v0/b/portfolio-898c3.appspot.com/o/Curriculum%20Euclides.pdf?alt=media&token=b1467e2c-b941-4062-a461-4aeb2e7ca32e')
-  }
 }

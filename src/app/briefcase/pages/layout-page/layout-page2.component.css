@@ -3,14 +3,14 @@
   border: 1px solid rgb(146, 141, 141);
 }
 .vela__blue__sidebar header .toggle .bi{
-  color: rgb(196, 219, 240);
+  color: var(--paragraph-white);
 }
 
 .vela__blue__sidebar .toggle i {
-  color: rgb(216, 233, 249);
+  color: var(--paragraph-white);
 }
 .sidebar li a .nav__text__white {
-    color: white;
+  color: var(--paragraph-white);
 }
 
 .switchDark::before {
@@ -24,7 +24,7 @@
   color: var(--sidebar-color);
 }
 .vela__blue__sidebar .menu__bar li .pi {
-    color: aliceblue;
+    color: var(--paragraph-white);
 }
 
 .vela__blue__sidebar .menu__bar li .pi__sun::before {
@@ -33,15 +33,15 @@
 }
 
 .vela__blue__sidebar .menu__bar .menu__search .search {
-    color: rgb(255, 255, 255);
-    background-color: var(--surface-d);
+  color: var(--paragraph-white);
+  background-color: var(--surface-d);
 }
 
 .vela__blue__sidebar .menu__bar .menu__search {
     background-color: var(--surface-d);
 }
 .vela__blue__sidebar .menu__bar .search::placeholder{
-  color: rgb(236, 238, 240);
+  color: var(--paragraph-white);
 }
 
 .vela__blue__sidebar .header-text {
@@ -63,7 +63,7 @@
     background-color: var(--surface-d);
 }
 .vela__blue__sidebar .social__media i{
-  color: aliceblue;
+  color: var(--paragraph-white);
 }
 .closeNav {
     width: 75px;
