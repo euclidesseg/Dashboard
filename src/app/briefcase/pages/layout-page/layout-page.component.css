@@ -26,7 +26,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  padding: 10px 10px;
+  padding: 10px 10px 0px 10px;
   width: 250px;
   background-color: var(--sidebar-color);
   transition: var(--trans-02);
@@ -52,8 +52,7 @@
   margin-left: 2.5px;
 }
 
-.sidebar .menu__bar i,
-.bottom__content i {
+.sidebar .menu__bar i{
   color: var(--paragraph-black);
 }
 
@@ -61,6 +60,7 @@
   overflow: hidden;
   height: 100%;
   margin-left: -5px;
+  position: relative;
 }
 
 .menu__bar .menu__list{
@@ -93,7 +93,7 @@ header .image-text .image__logo {
   height: 35px;
   width: 35px;
   transform: translateY(-50px);
-  border: 1px solid rgb(128, 121, 121);
+  border: 1px solid rgb(95, 92, 92);
   border-radius: 5px;
   display: flex;
   z-index: 10;
@@ -101,7 +101,7 @@ header .image-text .image__logo {
   justify-content: center;
 }
 .toggle .bi{
-  color: rgb(65, 65, 70);
+  color: rgb(76, 76, 80);
 }
 
 li {
@@ -155,61 +155,11 @@ li {
 
 }
 
-.menu__bar .bottom__content {
-  margin-top: 5px;
-}
-
-.menu__bar .bottom__content .log {
-  border-radius: 5px;
-}
-
 .sidebar .menu__bar {
   height: calc(95% - 50px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.menu__bar .mode {
-  background-color: var(--primary-color-ligth);
-  border-radius: 5px;
-  transition: var(--trans-03);
-  width: calc(100% - 10px);
-  margin-right: 10px;
-  margin-bottom: 5px;
-  position: relative;
-  color: var(--surface-f);
-  overflow: hidden;
-}
-
-.menu__bar .mode .moon__sun {
-  height: 50px;
-  width: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.menu__bar .mode i {
-  position: absolute;
-  top: 17px;
-}
-
-.menu__bar .mode i.sun {
-  opacity: 0;
-
-}
-
-.menu__bar .mode .toggle__switch {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  min-width: 60px;
-  cursor: pointer;
-  position: relative;
-  margin-left: 45px;
-
 }
 
 .social__media {
@@ -220,7 +170,7 @@ li {
   overflow-y: auto;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 5px 0px 15px 15px ;
+  margin: 5px 0px 0px 15px ;
   color: var(--paragraph-black);
 }
 .social__media i{
@@ -228,31 +178,53 @@ li {
   margin: 5px;
 }
 
-.sidebar li .mode__text {
-  width: auto;
-  overflow: hidden;
+.sidebar .menu__bar .mode{
+  width: 100%;
+  background-color: var(--gray-50);
+  border-radius: 15px;
+  padding: 4px;
+  height: auto;
+  min-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
-
-.toggle__switch .switch {
-  position: relative;
-  height: 22px;
-  width: 35px;
+.menu__bar .mode div{
+  width: 50%;
+  height: auto;
+  min-height: 30px;
   border-radius: 20px;
-  background-color: var(--toggle-color);
-  transition: var(--trans-03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-50);
+  cursor: pointer;
+}
+.mode div span{
+  font-family: var(--roboto);
+  font-size: 1rem;
+  color: var(--paragraph-black);
+  font-weight: 500;
+}
+.menu__bar .mode .btn__dark__select{
+  background-color: var(--sidebar-color);
+  box-shadow: 0px 0px 5px rgba(110, 109, 109, 0.582);
+}
+.menu__bar .mode .btn__light__select{
+  background-color: var(--sidebar-color);
+  box-shadow: 0px 0px 5px rgba(19, 18, 18, 0.582);
+}
+.mode div span i{
+  margin-right: 7px;
+  color: var(--paragraph-black);
+  font-weight: 600;
 }
 
-.switch::before {
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: 3px;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  transition: var(--trans-03);
-  background-color: var(--surface-d);
-}
+
+
+
 @media(max-width:460px){
-  .sidebar .image{}
 }

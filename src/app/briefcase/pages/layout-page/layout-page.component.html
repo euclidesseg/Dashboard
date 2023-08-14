@@ -16,7 +16,6 @@
     </div>
 
     <span class="toggle" (click)="openOrCloseSidebar()">
-      <!-- <img src="assets/images/menu.svg" alt="" class="toggle__image"> -->
       <i class="bi bi-layout-sidebar-inset-reverse" [ngClass]="{'bi-layout-sidebar-inset': isClose}"></i>
     </span>
   </header>
@@ -37,30 +36,28 @@
       </ul>
 
     </div>
-    <div class="bottom__content">
 
-      <div class="social__media">
-        <a href="https://github.com/euclidesseg" target="_blank"><i class="pi pi-github"></i></a>
-        <a href="https://www.linkedin.com/in/euclides-perez-55329b196/" target="_blank"><i
-            class="pi pi-linkedin"></i></a>
-        <a href="mailto:euclides2696@gmail.com" target="_blank"><i class="pi pi-google"></i></a>
-      </div>
-      <!-- <li class="log">
+    <div class="social__media">
+      <a href="https://github.com/euclidesseg" target="_blank"><i class="pi pi-github"></i></a>
+      <a href="https://www.linkedin.com/in/euclides-perez-55329b196/" target="_blank"><i class="pi pi-linkedin"></i></a>
+      <a href="mailto:euclides2696@gmail.com" target="_blank"><i class="pi pi-google"></i></a>
+    </div>
+    <!-- <li class="log">
                     <i class="pi pi-power-off"></i>
                     <span class="text nav__text">
                         Logout
                     </span>
             </li> -->
-      <li class="mode" (click)="darkMode()">
-        <div class="moon__sun">
-          <i class="pi pi-moon" [ngClass]="{'pi__sun': darkModeSelect}"></i>
-        </div>
-        <span class="mode__text tex">{{ mode }}</span>
-        <div class="toggle__switch">
-          <span class="switch" [ngClass]="{switchDark: darkModeSelect}"></span>
-        </div>
-      </li>
+
+    <div class="mode">
+      <div class="light btn__light__select"  [ngClass]="{'btn__light__select': !darkModeSelect}" (click)="changeMode('light')">
+        <span> <i class="pi pi-sun"></i> Light</span>
+      </div>
+      <div class="dark btn__dark__select"  [ngClass]="{'btn__dark__select': darkModeSelect}" (click)="changeMode('dark')">
+        <span> <i class="pi pi-moon"></i> Dark</span>
+      </div>
     </div>
+
   </div>
 </nav>
 

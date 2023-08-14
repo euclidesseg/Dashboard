@@ -3,52 +3,41 @@ import { Injectable, OnInit, Inject } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 export interface Mode {
-  dark: boolean;
-  modeText: string;
+  mode:string
 }
 @Injectable({
   providedIn: 'root',
 })
-export class DarkModeService implements OnInit {
-  private _darkModeIsSelect = new BehaviorSubject<Mode>({dark:false, modeText:'Light'});
+export class DarkModeService{
+  private _darkModeIsSelect = new BehaviorSubject<Mode>({mode:'light'});
   darkModeIsSelect: Observable<Mode> = this._darkModeIsSelect.asObservable();
 
   // esta injeccion la uso para obtener una referencia al DOM del body y asi asignarle o removele
   // una clase su uso se ve estableciso en el metodo selecDarkMode
   constructor(@Inject(DOCUMENT) private document: Document) {
-    // Leer el valor almacenado en el Local Storage
     const modeSelected = localStorage.getItem('modeSelected');
     if (modeSelected) {
-      try {
-        const mode:Mode = JSON.parse(modeSelected);
-        this._darkModeIsSelect.next(mode);
-        if(mode.dark){
-          this.document.body.classList.add('vela__blue')
-        } else{
-          this.document.body.classList.remove('vela__blue')
-        }
-      } catch (error) {
-        console.error('Error parsing stored value:', error);
-      }
+      const mode: Mode = JSON.parse(modeSelected);
+      this._darkModeIsSelect.next(mode);
+      this.setDarkModeClass(mode.mode === 'dark'); // coparo si es verdadero para llamar el metodo
     }
   }
 
-  ngOnInit(): void {
-
+  selecDarkMode(mode: string) {
+    const isDark = mode === 'dark';
+    this.setDarkModeClass(isDark);
+    this._darkModeIsSelect.next({ mode });
+    localStorage.setItem('modeSelected', JSON.stringify(this._darkModeIsSelect.value));
   }
 
-  selecDarkMode(){
-
-    const isActive = !this._darkModeIsSelect.value.dark;
-    if (isActive) {
+  private setDarkModeClass(isDark: boolean) {
+    if (isDark) {
       this.document.body.classList.add('vela__blue');
-      this._darkModeIsSelect.next({dark:true, modeText:'Light'});
     } else {
       this.document.body.classList.remove('vela__blue');
-      this._darkModeIsSelect.next({dark:false, modeText:'Dark'});
     }
-    localStorage.setItem('modeSelected', JSON.stringify( this._darkModeIsSelect.value));
   }
+
 }
 
 // NOTAS: ( darkModeIsSelect) es una variable publica que emite un  observable, el cual recibe mediante asObservable(),

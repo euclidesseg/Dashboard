@@ -14,7 +14,14 @@ export class LayoutPageComponent implements OnInit {
   // esta injeccion la uso para obtener una referencia al DOM del body y asi asignarle o removele
   // una clase su uso se ve estableciso en el metodo darkMode
   constructor(private sharedService: DarkModeService) {
-    this.sharedService.darkModeIsSelect.subscribe((value) =>  {this.darkModeSelect = value.dark, this.mode = value.modeText})
+    this.sharedService.darkModeIsSelect.subscribe((value) =>  {
+      if(value.mode === 'dark')(
+        this.darkModeSelect = true
+      )
+      else{
+        this.darkModeSelect = false;
+      }
+    })
   }
 
   ngOnInit(): void {
@@ -34,8 +41,8 @@ export class LayoutPageComponent implements OnInit {
   openWithSearch() {
     this.openOrCloseSidebar();
   }
-  darkMode() {
-   this.sharedService.selecDarkMode();
+  changeMode(mode:string) {
+   this.sharedService.selecDarkMode(mode);
   }
 
   public sidebarItems = [

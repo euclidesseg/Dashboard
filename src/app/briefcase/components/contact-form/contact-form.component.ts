@@ -19,9 +19,13 @@ export class ContactFormComponent implements OnInit {
   @Output() onNewMessage: EventEmitter<MessageDto> =  new EventEmitter<MessageDto>();
 
   ngOnInit(): void {
-    this.darkModeService.darkModeIsSelect.subscribe(
-      (value) => (this.isDarkModeSelect = value.dark)
-    );
+    this.darkModeService.darkModeIsSelect
+    .subscribe((value) => {
+      if(value.mode === 'dark'){
+        this.isDarkModeSelect = true
+      }
+
+    });
   }
 
   public messageForm: FormGroup = this.formBuilder.group({

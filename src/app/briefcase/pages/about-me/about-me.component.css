@@ -7,8 +7,7 @@
 .container .hellow {
   width: 100%;
   height: auto;
-  margin: 100px auto 100px auto;
-  margin-bottom: 80px;
+  margin: 30px auto 80px auto;
   min-height: 400px;
   display: flex;
   justify-content: center;

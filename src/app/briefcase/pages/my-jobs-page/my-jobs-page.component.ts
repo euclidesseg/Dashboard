@@ -12,7 +12,15 @@ export class MyJobsPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.darkModeService.darkModeIsSelect
-    .subscribe((value) => this.isDarkSelect = value.dark)
+    .subscribe((value) => {
+      if(value.mode === 'dark'){
+        this.isDarkSelect = true;
+      }
+      else{
+        this.isDarkSelect = false;
+      }
+
+    })
   }
 
 }
