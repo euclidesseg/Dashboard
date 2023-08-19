@@ -29,8 +29,8 @@
   padding: 10px 10px 0px 10px;
   width: 250px;
   background-color: var(--sidebar-color);
-  transition: var(--trans-02);
   z-index: 100;
+  transition: var(--trans-02);
 }
 
 .sidebar .image-text {
@@ -144,7 +144,7 @@ li {
 
 
 .sidebar li .nav__text {
-  margin-left: 25px;
+  margin-left: 35px;
   color: var(--paragraph-black);
 }
 
@@ -160,22 +160,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.social__media {
-  display: flex;
-  width: auto;
-  max-width: 150px;
-  max-height: 100px;
-  overflow-y: auto;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 5px 0px 0px 15px ;
-  color: var(--paragraph-black);
-}
-.social__media i{
-  font-size: 1.2rem;
-  margin: 5px;
 }
 
 .sidebar .menu__bar .mode{

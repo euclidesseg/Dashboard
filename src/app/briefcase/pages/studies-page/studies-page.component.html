@@ -1,4 +1,18 @@
-<section>
-  <div class="studi">
+<section class="container__cards">
+  <div *ngFor="let studie of studies" class="card__container">
+      <img [src]="studie.img" alt="" class="img__card">
+    <div class="info__card" [ngClass]="{'darkText': darkModeSelected}">
+      <h3 class="unstitution">{{studie.institution | uppercase}}</h3>
+      <h4 class="title__card">{{studie.title}}</h4>
+      <span class="date">{{studie.date}}</span>
+      <div class="aptitudes">
+        <h4>Aptidudes:</h4>
+        <span *ngFor="let aptitud of studie.aptitudes">{{aptitud}}</span>
+      </div>
+      <div class="credential">
+        <a [href]="studie.credential" target="_blank">Credential <i class="pi pi-external-link"></i></a>
+      </div>
+    </div>
   </div>
 </section>
+

@@ -127,7 +127,6 @@ body {
 /* clases para textos cuando esta en modo dark */
 .darkText{
   color: var(--text-color) !important
-  /* transition: var(--trans-05); */
 }
 .notification{
   background-color: rgb(23, 184, 233);
