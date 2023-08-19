@@ -22,7 +22,10 @@
 
   <div class="menu__bar">
     <div class="menu">
-      <!-- <li class="menu
+      <!-- <li class="menu__search">
+        <i class="pi pi-search" (click)="openWithSearch()"></i>
+        <input type="search" class="search" placeholder="Search....">
+      </li> -->
       <ul class="menu__list">
         <li class="nav__link" *ngFor="let item of sidebarItems" [routerLink]="item.url">
           <i [ngClass]="item.icon"></i>
