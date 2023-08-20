@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 90px;
+  padding: 50px 90px 90px 90px;
   gap: 80px;
 }
 
