@@ -165,7 +165,7 @@
 }
 
 .vela__blue {
-  background-color: var(--surface-e) !important;
+  background-color: var(--surface--blue) !important;
 }
 
 @media(max-width:1080px) {

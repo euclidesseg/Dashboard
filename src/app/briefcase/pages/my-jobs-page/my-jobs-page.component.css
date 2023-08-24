@@ -78,7 +78,7 @@
     transition: 1s;
 }
 .dark .work .work__parragraphs{
-  background-color: var(--surface-e);
+  background-color: var(--surface--blue);
 }
 .dark .github__cta i{
 color: var(--paragraph-white);

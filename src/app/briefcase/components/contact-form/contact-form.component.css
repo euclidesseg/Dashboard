@@ -84,7 +84,7 @@ span {
 }
 
 .dark {
-  background-color: var(--surface-card);
+  background-color: var(--surface--blue);
   transition: var(--trans-03);
 }
 

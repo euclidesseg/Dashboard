@@ -25,6 +25,8 @@
   --trans-04: all 0.4s ease;
   --trans-05: all 0.5s ease;
   /* Colors */
+  --surface--blue:#071426;
+  --body-ground:#040d19;
   --login:#159c93;
   --spring-boot:#6DB33F;
   --primary-color-ligth: #f6f5ff;
@@ -36,7 +38,6 @@
   --surface-b: #17212f;
   --surface-c: rgba(255, 255, 255, 0.03);
   --surface-d: #304562;
-  --surface-e: #1f2d40;
   --surface-f: #0c1219;
   --paragraph-black:black;
   --text-color: rgba(255, 255, 255, 0.87);
@@ -64,7 +65,7 @@ body {
 }
 
 .vela__blue {
-  background-color: var(--surface-b);
+  background-color: var(--body-ground);
   transition: 0s;
 }
 

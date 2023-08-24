@@ -18,7 +18,7 @@
 
 
 .vela__blue__sidebar {
-  background-color: var(--surface-card);
+  background-color: var(--surface--blue);
 }
 
 .vela__blue__sidebar .header-text .name {
