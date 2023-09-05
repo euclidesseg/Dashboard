@@ -1,4 +1,6 @@
-export const studies = [
+import { Studies } from "src/app/models/estudies.model";
+
+export const studies:Studies[] = [
     {
       img: 'https://mir-s3-cdn-cf.behance.net/projects/404/deac98138334863.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png',
       date: 'June - 2021 | June - 2023',
