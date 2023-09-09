@@ -2,6 +2,17 @@ import { Studies } from "src/app/models/estudies.model";
 
 export const studies:Studies[] = [
     {
+      img: 'https://yt3.googleusercontent.com/XJROXDoNaSXpXIBoR61QlGhdWOY6pZffRgObBhrhNDx_hyMgyXKa5IVVdCoOIPy0yA2kP5PmeA=s900-c-k-c0x00ffffff-no-rj',
+      date: 'June - 2023 | Current ',
+      institution: 'Iberoamerican university corporation',
+      title: 'Software Enginer',
+      aptitudes:['Math',
+      'Equations',
+      'English',
+      'Methodologies'],
+      credential: '',
+    },
+    {
       img: 'https://mir-s3-cdn-cf.behance.net/projects/404/deac98138334863.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png',
       date: 'June - 2021 | June - 2023',
       institution: 'cesde',
@@ -9,7 +20,7 @@ export const studies:Studies[] = [
       aptitudes: [
         'HTML, CSS, JavaScript, Java, C#, GitHub, Python, Logica de Programacion, Analisis de Datos, SQLServer, MySql React, Angular',
       ],
-      credential: '',
+      credential: 'https://firebasestorage.googleapis.com/v0/b/portfolio-898c3.appspot.com/o/certified.jpg?alt=media&token=5b132a40-2474-4b15-94bb-a316b56a2bbe',
     },
     {
       img: 'https://cdn6.aptoide.com/imgs/1/6/9/169eb96640029c9984161f09c34f7109_icon.png',

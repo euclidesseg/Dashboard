@@ -7,7 +7,7 @@
       <span class="date">{{studie.date}}</span>
       <div class="aptitudes">
         <h4>Aptidudes:</h4>
-        <span *ngFor="let aptitud of studie.aptitudes">{{aptitud}}</span>
+        <span *ngFor="let aptitud of studie.aptitudes">{{aptitud}}, </span>
       </div>
       <div class="credential">
         <a [href]="studie.credential" target="_blank">Credential <i class="pi pi-external-link"></i></a>
