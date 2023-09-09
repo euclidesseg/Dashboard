@@ -82,7 +82,18 @@
   width: 75px;
   transition: var(--trans-02);
 }
-
+.closeNav header .toggle {
+  top: 130%;
+  right: 10px;
+  z-index: 200;
+  margin-top: 55px;
+}
+.closeNav .image-text img{
+  display: none;
+}
+.closeNav .menu__bar {
+  height: calc(100% - 10px);
+}
 .closeNav .menu__bar li {
   margin-left: 10px;
   width: 43px;
@@ -132,5 +143,6 @@
 .closeNav~.home {
   margin-left: 75px;
   width: calc(100% - 55px);
+  transition: 0.2s;
 }
 

@@ -61,12 +61,10 @@
 body {
   text-emphasis: 100vh;
   background-color: var(--bodi-color);
-  transition: 0s;
 }
 
 .vela__blue {
   background-color: var(--body-ground);
-  transition: 0s;
 }
 
 ::-webkit-scrollbar {

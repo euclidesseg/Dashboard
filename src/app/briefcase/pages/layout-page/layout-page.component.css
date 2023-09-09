@@ -30,7 +30,7 @@
   width: 250px;
   background-color: var(--sidebar-color);
   z-index: 100;
-  transition: var(--trans-02);
+  transition: 0.2s;
 }
 
 .sidebar .image-text {
@@ -87,7 +87,7 @@ header .image-text .image__logo {
 
 .sidebar header .toggle {
   position: absolute;
-  top: 120%;
+  top: 130%;
   right: -60px;
   cursor: pointer;
   height: 35px;
@@ -156,7 +156,7 @@ li {
 }
 
 .sidebar .menu__bar {
-  height: calc(95% - 50px);
+  height: calc(100% - 50px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -164,6 +164,8 @@ li {
 
 .sidebar .menu__bar .mode{
   width: 100%;
+  position: relative;
+  bottom: 20px;
   background-color: var(--gray-50);
   border-radius: 15px;
   padding: 4px;
