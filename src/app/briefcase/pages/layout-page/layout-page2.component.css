@@ -92,7 +92,8 @@
   display: none;
 }
 .closeNav .menu__bar {
-  height: calc(100% - 10px);
+  height: calc(100% - 40px);
+  margin-top: 50px;
 }
 .closeNav .menu__bar li {
   margin-left: 10px;
