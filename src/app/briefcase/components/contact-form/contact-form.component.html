@@ -1,14 +1,19 @@
-<form class="form" [ngClass]="{'dark':isDarkModeSelect}" [formGroup]="messageForm" (ngSubmit)="newMessage()">
+<form class="form" [ngClass]="{'darkMode':isDarkModeSelect}" [formGroup]="messageForm" (ngSubmit)="newMessage()">
   <div class="form__container">
-    <h2 class="form__title">Contact me</h2>
-    <input type="text" class="form__input"  placeholder="company-name" formControlName = "nombreempresa">
-    <span *ngIf="isInvalidControl('nombreempresa')"class="form-text text-danger">{{getControlError('nombreempresa')}}</span>
+    <div class="text__form">
+      <h2 class="form__title">Send me a message!</h2>
+      <p>Got a question or proposal, or just want to say hello? Go ahead</p>
+    </div>
+    <div class="data">
+      <input type="text" class="form__input"  placeholder="your name" formControlName = "nombreempresa">
+      <span *ngIf="isInvalidControl('nombreempresa')"class="form-text text-danger">{{getControlError('nombreempresa')}}</span>
 
-    <input type="email" class="form__input"  placeholder="email" formControlName = "email" >
-    <span class="form-text text-danger" *ngIf="isInvalidControl('email')">Invalid email format</span>
+      <input type="email" class="form__input"  placeholder="email adress" formControlName = "email" >
+      <span class="form-text text-danger" *ngIf="isInvalidControl('email')">Invalid email format</span>
+    </div>
 
     <textarea class="form__input form__input--message" placeholder="message" formControlName = "message"></textarea>
     <span class="form-text text-danger" *ngIf="isInvalidControl('message')">{{getControlError('message')}}</span>
-    <button type="submit" class="form__cta form__cta--submit">Send</button>
+    <button type="submit" class="form__cta form__cta--submit"><span class="send__message"> <span>SEND <i class="bi bi-arrow-right"></i></span></span> SEND <i class="bi bi-arrow-right"></i></button>
   </div>
 </form>

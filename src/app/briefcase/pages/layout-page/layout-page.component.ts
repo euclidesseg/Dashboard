@@ -54,5 +54,6 @@ export class LayoutPageComponent implements OnInit{
     { label: 'Studies', icon: 'pi pi-book', url: './studies' },
     { label: 'Experience', icon: 'pi pi-globe', url: './expereicence' },
     { label: 'Motivations', icon: 'pi pi-heart-fill', url: './motivations' },
+    { label: 'Contact', icon: 'pi pi-phone', url: './contact' },
   ];
 }

@@ -21,7 +21,7 @@
 .card__container .img__card{
   width:auto;
   min-width: 150px;
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
   min-height: 240px;
 
@@ -73,7 +73,7 @@
   text-align: center;
 }
 
-@media(max-width:1115px){
+@media(max-width:800px){
   .container__cards{
     padding: 0px 50px 0px 50px;
    }
@@ -110,6 +110,6 @@
     height: 200px;
   }
 }
-.darkText .credential a{
+.darkMode .credential a{
   color: var(--paragraph-white);
 }

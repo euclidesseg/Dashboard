@@ -1,7 +1,7 @@
 <section class="container__cards">
   <div *ngFor="let studie of studies" class="card__container">
       <img [src]="studie.img" alt="" class="img__card">
-    <div class="info__card" [ngClass]="{'darkText': darkModeSelected}">
+    <div class="info__card" [ngClass]="{'darkMode': darkModeSelected}">
       <h3 class="unstitution">{{studie.institution | uppercase}}</h3>
       <h4 class="title__card">{{studie.title}}</h4>
       <span class="date">{{studie.date}}</span>
@@ -9,7 +9,7 @@
         <h4>Aptidudes:</h4>
         <span *ngFor="let aptitud of studie.aptitudes">{{aptitud}}, </span>
       </div>
-      <div class="credential">
+      <div class="credential" *ngIf="studie.credential">
         <a [href]="studie.credential" target="_blank">Credential <i class="pi pi-external-link"></i></a>
       </div>
     </div>

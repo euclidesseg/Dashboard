@@ -105,6 +105,7 @@
 }
 
 .closeNav .menu__bar .mode{
+  bottom: 15px;
   flex-direction: column;
 }
 .closeNav .menu__bar .mode div i{

@@ -62,10 +62,14 @@
   margin-left: -5px;
   position: relative;
 }
+.menu__bar .menu{
+  height: 80%;
+}
 
 .menu__bar .menu__list{
   margin-top: 10px;
-  max-height: 420px;
+  height: auto;
+  max-height: 100%;
   overflow-y: auto;
   overflow-anchor: 1px;
 
@@ -156,7 +160,7 @@ li {
 }
 
 .sidebar .menu__bar {
-  height: calc(100% - 50px);
+  height: calc(100% - 40px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -165,7 +169,7 @@ li {
 .sidebar .menu__bar .mode{
   width: 100%;
   position: relative;
-  bottom: 20px;
+  bottom: 35px;
   background-color: var(--gray-50);
   border-radius: 15px;
   padding: 4px;

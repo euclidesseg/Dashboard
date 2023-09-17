@@ -23,6 +23,8 @@ export class ContactFormComponent implements OnInit {
     .subscribe((value) => {
       if(value.mode === 'dark'){
         this.isDarkModeSelect = true
+      }else{
+        this.isDarkModeSelect = false
       }
 
     });

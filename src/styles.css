@@ -124,7 +124,7 @@ body {
 }
 
 /* clases para textos cuando esta en modo dark */
-.darkText{
+.darkMode{
   color: var(--text-color) !important
 }
 .notification{

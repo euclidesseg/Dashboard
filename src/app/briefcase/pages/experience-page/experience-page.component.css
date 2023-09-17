@@ -56,7 +56,7 @@
 }
 
 
-@media(max-width:1115px){
+@media(max-width:800px){
   .container__cards{
     padding: 0px 50px 0px 50px;
    }
@@ -93,6 +93,6 @@
     height: 200px;
   }
 }
-.darkText .aptitudes *{
+.darkMode .aptitudes *{
   color: var(--paragraph-white);
 }

@@ -1,12 +1,10 @@
 .form {
   transition: var(--trans-03);
-  width: 90%;
-  max-width: 400px;
+  width: 60%;
+  padding: 25px;
   border-radius: 10px;
   margin: auto;
   margin-top: 25px;
-  padding: 3.5em 2.5em;
-  background-color: var(--sidebar-color);
   text-decoration-style: solid blue;
 
 }
@@ -21,27 +19,41 @@
   gap: 1em;
   grid-auto-columns: 100%;
 }
-
-.form__input {
-  font-family: inherit;
-  background-color: rgba(144, 149, 149, 0);
-}
-
-.form__title {
+.form .form__container .text__form{
+  width: 70%;
   text-align: center;
-  font-size: 1.5rem;
   color: black;
+  margin: 0 auto 25px auto;
+}
+.text__form p{
+  font-size: 1.1rem;
+}
+.form .form__container .text__form .form__title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--button-color);
   transition: var(--trans-03);
 }
 
-.form__input {
+.data{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.data .form__input{
+  width: 40%;
+}
+
+
+.form .form__container .form__input {
   font-size: 1rem;
   padding: .6em .5em;
   outline: none;
   border: none;
   color: black;
-  border: 1px solid #bbb0b0;
-  border-radius: 0.3em;
+  background-color: inherit;
+  border-bottom: 1px solid black;
 }
 
 .form__input--message {
@@ -49,59 +61,104 @@
   padding: 1.5em 1em;
 }
 
-.form__cta {
+.form .form__cta {
   position: relative;
   font-family: inherit;
-  background-color: #089fe0;
-  border: none;
-  font-weight: 600;
+  color: var( --button-color);
+  background-color:var(--sidebar-color);
+  border: 1px solid black;
+  width: auto;
+  min-width: 200px;
+  font-weight: 400;
   padding: .7em 0;
-  border-radius: .2em;
   cursor: pointer;
   height: 45px;
   overflow: hidden;
   transition: .3s;
+  margin: 15px auto 0 auto;
 }
 
-.form__cta:hover {
-  transition: .3s;
-  box-shadow: 0px 0px 15px rgba(26, 25, 25, 0.448);
+.form__cta .send__message{
+  position: absolute;
+  top: 0;
+  right:  100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button-color);
+  height: 100%;
+  width: 100%;
+  color: var(--sidebar-color);
+  transition: .1s;
+  transition-timing-function: ease-out;
 }
+.form__cta .send__message span{
+  display: none;
+}
+.form .form__cta:hover .send__message span{
+  display: block;
+  transition: 1s;
+  color: var(--sidebar-color);
+}
+.form__cta:hover .send__message{
+  right: 0%;
+}
+
 
 span {
   color: rgb(223, 107, 107);
 }
 
-@media(max-width:517px) {
+@media(max-width:750px) {
+  .form__container .text__form{
+    width: 90%;
+  }
   .form__title {
-    font-size: 1rem;
+    font-size: 2rem;
     transition: .2s;
   }
-
+  .form__cta{
+    min-width: 150px;
+  }
   .form {
+    width: 90%;
     padding: 2.5em 1.5em;
+  }
+  .data{
+    flex-direction: row;
+  }
+  .data .form__input{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
   }
 }
 
-.dark {
-  background-color: var(--surface--blue);
-  transition: var(--trans-03);
-}
 
-.dark .form__input {
+.darkMode  .form__container .text__form{
+  color: var(--sidebar-color);
+}
+.darkMode  .form__container .text__form .form__title{
+  color: var(--sidebar-color);
+}
+.darkMode .form__container .form__input {
   color: aliceblue;
+  border-bottom: 1px solid var(--sidebar-color);
+}
+.darkMode .form__input::placeholder {
+  color: var(--sidebar-color);
 }
 
-.dark .form__input::placeholder {
-  color: white;
+.darkMode .form__cta{
+  background-color: var(--button-color);
+  color: var(--sidebar-color);
 }
 
-.dark .form__title {
-  color: aliceblue;
-  transition: var(--trans-03);
+.darkMode .form__cta:hover .send__message span{
+  color: var(--button-color);
+  background-color: var(--sidebar-color);
 }
-
-.dark .form__cta:hover {
-  box-shadow: 0px 0px 15px rgba(11, 11, 11, 0.841);
-
+.darkMode .form__cta:hover .send__message{
+  background-color: var(--sidebar-color);
+  color: var(--button-color);
 }

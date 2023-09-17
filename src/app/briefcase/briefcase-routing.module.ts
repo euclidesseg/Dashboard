@@ -6,6 +6,7 @@ import { MyJobsPageComponent } from "./pages/my-jobs-page/my-jobs-page.component
 import { StudiesPageComponent } from "./pages/studies-page/studies-page.component";
 import { ExperiencePageComponent } from "./pages/experience-page/experience-page.component";
 import { MotivationsPageComponent } from "./pages/motivations-page/motivations-page.component";
+import { ContactComponent } from "./pages/contact/contact.component";
 
 const routes: Routes = [
     {
@@ -17,6 +18,7 @@ const routes: Routes = [
             { path:'studies',component:StudiesPageComponent },
             { path:'expereicence',component:ExperiencePageComponent },
             { path:'motivations',component:MotivationsPageComponent },
+            { path:'contact',component:ContactComponent },
             { path:'**', redirectTo:'about-me',}
         ]
     }

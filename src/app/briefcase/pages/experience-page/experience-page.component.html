@@ -1,12 +1,11 @@
 <section class="container__cards">
   <div *ngFor="let experience of experiences" class="card__container">
       <img [src]="experience.img" alt="" class="img__card">
-    <div class="info__card" [ngClass]="{'darkText': darkModeSelected}">
+    <div class="info__card" [ngClass]="{'darkMode': darkModeSelected}">
       <h3 class="company">{{experience.company | uppercase}}</h3>
       <h4 class="title__card">{{experience.title}}</h4>
       <span class="date">{{experience.date}}</span>
       <div class="aptitudes">
-        <h4>Performance:</h4>
         <ul>
           <li *ngFor="let skill of experience.skills">{{skill}}</li>
         </ul>

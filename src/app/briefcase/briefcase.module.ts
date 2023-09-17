@@ -13,6 +13,7 @@ import { HobbiesPageComponent } from './pages/hobbies-page/hobbies-page.componen
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BriefcaseService } from './services/briefcase.service';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 
@@ -26,6 +27,7 @@ import { BriefcaseService } from './services/briefcase.service';
     MotivationsPageComponent,
     HobbiesPageComponent,
     ContactFormComponent,
+    ContactComponent,
   ],
   imports: [
     CommonModule,
