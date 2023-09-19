@@ -8,7 +8,6 @@ import { LayoutPageComponent } from './pages/layout-page/layout-page.component';
 import { BriefCaseRoutingModule } from './briefcase-routing.module';
 import { StudiesPageComponent } from './pages/studies-page/studies-page.component';
 import { ExperiencePageComponent } from './pages/experience-page/experience-page.component';
-import { MotivationsPageComponent } from './pages/motivations-page/motivations-page.component';
 import { HobbiesPageComponent } from './pages/hobbies-page/hobbies-page.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -24,7 +23,6 @@ import { ContactComponent } from './pages/contact/contact.component';
     LayoutPageComponent,
     StudiesPageComponent,
     ExperiencePageComponent,
-    MotivationsPageComponent,
     HobbiesPageComponent,
     ContactFormComponent,
     ContactComponent,

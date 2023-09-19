@@ -1,7 +1,7 @@
 .container__cards{
   width: 100%;
   height: auto;
-  padding: 0px 90px 90px 90px;
+  padding: 0px 90px 90px 135px;
 }
 
 .card__container{
@@ -75,7 +75,7 @@
 
 @media(max-width:800px){
   .container__cards{
-    padding: 0px 50px 0px 50px;
+    padding: 0px 50px 0px 40px;
    }
   .card__container{
     flex-direction: column;
@@ -89,7 +89,7 @@
 }
 @media(max-width:600px){
   .container__cards{
-    padding: 10px 30px 0px 30px;
+    padding: 10px 30px 0px 25px;
   }
   .card__container .img__card{
     max-width: 28%;

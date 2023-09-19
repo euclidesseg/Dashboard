@@ -8,7 +8,7 @@
       <input type="text" class="form__input"  placeholder="your name" formControlName = "nombreempresa">
       <span *ngIf="isInvalidControl('nombreempresa')"class="form-text text-danger">{{getControlError('nombreempresa')}}</span>
 
-      <input type="email" class="form__input"  placeholder="email adress" formControlName = "email" >
+      <input type="email" class="form__input"  placeholder="email" formControlName = "email" >
       <span class="form-text text-danger" *ngIf="isInvalidControl('email')">Invalid email format</span>
     </div>
 

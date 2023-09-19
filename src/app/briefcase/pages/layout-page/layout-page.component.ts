@@ -53,7 +53,7 @@ export class LayoutPageComponent implements OnInit{
     { label: 'Projects', icon: 'pi pi-briefcase', url: './my-projects' },
     { label: 'Studies', icon: 'pi pi-book', url: './studies' },
     { label: 'Experience', icon: 'pi pi-globe', url: './expereicence' },
-    { label: 'Motivations', icon: 'pi pi-heart-fill', url: './motivations' },
+    { label: 'Hobbies', icon: 'pi pi-heart-fill', url: './hobbies' },
     { label: 'Contact', icon: 'pi pi-phone', url: './contact' },
   ];
 }
