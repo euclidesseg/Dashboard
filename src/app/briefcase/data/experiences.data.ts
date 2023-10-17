@@ -2,8 +2,18 @@ import { Experiences } from "src/app/models/experiences.model";
 
 export const experiences:Experiences[] = [
   {
+    img:'https://media.licdn.com/dms/image/C560BAQFStGE2TteAOQ/company-logo_200_200/0/1536875607808?e=2147483647&v=beta&t=ufyE6JNtYZvEUfVJCOIt0iOhFufnJAY4uLyb4fSvgTQ',
+    date:'20-09-2022 | Actual',
+    company:'101 Software  s.a.s',
+    title:'Developer JR',
+    skills:['Direct collaboration with development team.',
+      'Effective coding of software changes and alterations based on specific design specifications.',
+      'layout and maintenance of web portals.',
+      'Frontend development with html css and JavaScript.'],
+  },
+  {
     img:'https://firebasestorage.googleapis.com/v0/b/portfolio-898c3.appspot.com/o/Intecol.jpg?alt=media&token=e253f345-bf7f-4af6-8144-38e120e4c46e',
-    date:'16-12-2022 | Actual',
+    date:'16-12-2022 | 19-09-2022',
     company:'Iintecol  s.a.s',
     title:'Developer JR',
     skills:['Direct collaboration with the development team to analyze customer requirements.',
