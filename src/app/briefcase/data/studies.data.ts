@@ -64,7 +64,7 @@ export const studies:Studies[] = [
       credential: 'https://www.coursera.org/account/accomplishments/certificate/AXSNK5ZVSQZQ',
     },
     {
-      img: 'https://scontent.fbaq2-2.fna.fbcdn.net/v/t39.30808-1/313370328_486226193532873_2613685284957530386_n.png?stp=dst-png_p320x320&_nc_cat=100&ccb=1-7&_nc_sid=754033&_nc_eui2=AeGKAP6KXDeE-Qem7-q3y7EwAZ4r6gxnEW8BnivqDGcRb3uzTKon2LHxM-pYC6ln8l63lGqtwntCelk7dYna6Qo-&_nc_ohc=Bl7Y2iUU2VIAX-ymyjL&_nc_ht=scontent.fbaq2-2.fna&oh=00_AfDWyK9dr1go3iXRElLY1gjO1XfIuCuMj2WiRiR1rCFdHg&oe=6509741E',
+      img: 'https://yt3.googleusercontent.com/ytc/APkrFKakoq7Kf1x0mIV7rAQnr7A4jOGVqRTxPwKKyi--=s900-c-k-c0x00ffffff-no-rj',
       date: 'January - 2022 | February - 2022',
       institution: 'Politecnico de colombia',
       title: 'Diploma in Java Programing',
