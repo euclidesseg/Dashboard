@@ -80,7 +80,7 @@
 
 .closeNav {
   width: 75px;
-  transition: var(--trans-02);
+  transition: var(--trans-01);
 }
 .closeNav header .toggle {
   top: 130%;

@@ -30,7 +30,7 @@
   width: 250px;
   background-color: var(--sidebar-color);
   z-index: 100;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .sidebar .image-text {
@@ -201,7 +201,7 @@ li {
 }
 .menu__bar .mode .btn__dark__select{
   background-color: var(--sidebar-color);
-  box-shadow: 0px 0px 5px rgba(110, 109, 109, 0.582);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.582);
 }
 .menu__bar .mode .btn__light__select{
   background-color: var(--sidebar-color);

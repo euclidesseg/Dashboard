@@ -20,6 +20,7 @@
   --source-code: 'Source Code Pro', monospace;
 
   /* transitions */
+  --trans-01: all 0.1s ease;
   --trans-02: all 0.2s ease;
   --trans-03: all 0.3s ease;
   --trans-04: all 0.4s ease;
@@ -61,10 +62,12 @@
 body {
   text-emphasis: 100vh;
   background-color: var(--bodi-color);
+  transition: .1s;
 }
 
 .vela__blue {
   background-color: var(--body-ground);
+  transition: .1s;
 }
 
 ::-webkit-scrollbar {
