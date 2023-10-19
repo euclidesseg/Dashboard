@@ -1,10 +1,9 @@
 .form {
   transition: var(--trans-03);
-  width:  60%;
+  width: 60%;
   padding: 25px;
   border-radius: 10px;
   margin: auto;
-  margin-top: 25px;
   text-decoration-style: solid blue;
 }
 
@@ -18,15 +17,18 @@
   gap: 1em;
   grid-auto-columns: 100%;
 }
-.form .form__container .text__form{
+
+.form .form__container .text__form {
   width: 70%;
   text-align: center;
   color: black;
   margin: 0 auto 25px auto;
 }
-.text__form p{
+
+.text__form p {
   font-size: 1.1rem;
 }
+
 .form .form__container .text__form .form__title {
   font-size: 2.5rem;
   margin-bottom: 15px;
@@ -34,13 +36,14 @@
   transition: var(--trans-03);
 }
 
-.data{
+.data {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.data .form__input{
+
+.data .form__input {
   width: 40%;
 }
 
@@ -59,109 +62,109 @@
   resize: none;
   padding: 1.5em 1em;
 }
-
-.form .form__cta {
-  position: relative;
-  font-family: inherit;
-  color: var( --button-color);
-  background-color:var(--sidebar-color);
-  border: 1px solid black;
-  width: auto;
-  min-width: 200px;
-  font-weight: 400;
-  padding: .7em 0;
-  cursor: pointer;
-  height: 45px;
-  overflow: hidden;
-  transition: .3s;
-  margin: 15px auto 0 auto;
-}
-
-.form__cta .send__message{
-  position: absolute;
-  top: 0;
-  right:  100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--button-color);
-  height: 100%;
-  width: 100%;
-  color: var(--sidebar-color);
-  transition: .2s;
-  transition-timing-function: ease-out;
-}
-.form__cta .send__message span{
-  display: none;
-}
-.form .form__cta:hover .send__message span{
-  display: block;
-  transition: 2s;
-  color: var(--sidebar-color);
-}
-.form__cta:hover .send__message{
-  right: 0%;
-  transition: .1s;
-}
-
-
 span {
   color: rgb(223, 107, 107);
 }
 
+.form .content__btn {
+  font-family: inherit;
+  background-color: var(--button-color);
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  font-weight: 400;
+  cursor: pointer;
+  height: 45px;
+  margin: 15px auto 0 auto;
+}
+
+.btn__submit{
+  position: relative;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  color: rgb(238, 238, 238);
+  height: 100%;
+  min-height:45px ;
+  width: 100%;
+  display: inline;
+  border: none;
+  padding-top: 11px;
+  border: 1px solid black;
+  z-index: 5;
+
+}
+.btn__submit::before{
+  content: "";
+  position:absolute;
+  background-color: var(--sidebar-color);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(0 0, 0 0, 0 99%, 0% 100%);
+  transition-property: color clip-path;
+  transition-duration: .5s;
+  z-index: -1;
+}
+.btn__submit:hover{
+  color: var(--button-color)
+}
+.btn__submit:hover::before{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.darkMode .form__container .text__form {
+  color: var(--sidebar-color);
+}
+
+.darkMode .form__container .text__form .form__title {
+  color: rgb(24, 85, 255);
+}
+
+.darkMode .form__container .form__input {
+  color: aliceblue;
+  border-bottom: 1px solid var(--sidebar-color);
+}
+
+.darkMode .form__input::placeholder {
+  color: var(--sidebar-color);
+}
+
+.darkMode .content__btn {
+  background-color: var(--button-color);
+  color: var(--sidebar-color);
+}
+
 @media(max-width:750px) {
-  .form__container .text__form{
+  .form__container .text__form {
     width: 90%;
   }
-  .form .form__container .text__form .form__title{
+
+  .form .form__container .text__form .form__title {
     font-size: 2rem;
     transition: .2s;
   }
-  .form__cta{
+
+  .content__btn {
     min-width: 150px;
   }
+
   .form {
     margin-right: 30px;
     width: 90%;
     padding: 2.5em 1.5em;
   }
-  .data{
+
+  .data {
     flex-direction: row;
   }
-  .data .form__input{
+
+  .data .form__input {
     width: 100%;
     margin: 0;
     margin-bottom: 15px;
   }
-}
-
-
-.darkMode  .form__container .text__form{
-  color: var(--sidebar-color);
-}
-.darkMode  .form__container .text__form .form__title{
-  color: var(--sidebar-color);
-}
-.darkMode .form__container .form__input {
-  color: aliceblue;
-  border-bottom: 1px solid var(--sidebar-color);
-}
-.darkMode .form__input::placeholder {
-  color: var(--sidebar-color);
-}
-
-.darkMode .form__cta{
-  background-color: var(--button-color);
-  color: var(--sidebar-color);
-}
-
-.darkMode .form__cta:hover .send__message span{
-  transition: .2s;
-  color: var(--button-color);
-  background-color: var(--sidebar-color);
-}
-.darkMode .form__cta:hover .send__message{
-  transition: .2s;
-  background-color: var(--sidebar-color);
-  color: var(--button-color);
 }

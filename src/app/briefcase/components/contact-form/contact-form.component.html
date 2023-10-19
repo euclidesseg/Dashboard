@@ -14,6 +14,8 @@
 
     <textarea class="form__input form__input--message" placeholder="message" formControlName = "message"></textarea>
     <span class="form-text text-danger" *ngIf="isInvalidControl('message')">{{getControlError('message')}}</span>
-    <button type="submit" class="form__cta form__cta--submit"><span class="send__message"> <span>SEND <i class="bi bi-arrow-right"></i></span></span> SEND <i class="bi bi-arrow-right"></i></button>
+    <div class="content__btn">
+      <div type="submit" class="btn__submit" (click)="newMessage()">SEND <i class="bi bi-arrow-right"></i></div>
+    </div>
   </div>
 </form>

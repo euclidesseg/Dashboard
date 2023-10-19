@@ -1,5 +1,7 @@
-.contact{
-  height: 500px;
+app-contact-form{
+  height: 100%;
   width: 100%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

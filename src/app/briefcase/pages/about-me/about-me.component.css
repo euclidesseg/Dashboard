@@ -93,27 +93,47 @@
   gap: 15px;
 }
 
-.button__cv a {
+.button__cv .cv {
+  position: relative;
   height: auto;
   height: 40px;
+  display: flex;
+  align-items: center;
   width: auto;
   padding: 8px;
   text-decoration: none;
-  min-width: 100px;
+  min-width: 120px;
   cursor: pointer;
-  border-radius: 7px;
   font-family: var(--roboto-mono);
   font-weight: 400;
   color: var(--paragraph-white);
   overflow: hidden;
   border-style: none;
-  background-color: var(--button-color)
+  border: 1px solid black;
+  background-color: var(--button-color);
+  z-index: 2;
 }
 
-.button__cv a:hover {
-  background-color: #3029fa;
-  box-shadow: 0px 0px 5px rgb(37, 37, 241);
-  transition: var(--trans-02);
+.button__cv .cv::before{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 100;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color:var(--sidebar-color);
+  clip-path: polygon(0 0, 0 0, 0 99%, 0% 100%);
+  transition-property: clip-path, color;
+  transition-duration: .5s;
+  z-index: -1;
+}
+.button__cv .cv:hover{
+  color: var(--button-color);
+}
+.button__cv .cv:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
 }
 
 .darkMode .social__media i {
@@ -192,6 +212,7 @@
 }
 
 .about__me__paragraph h3 {
+  color: var(--button-color);
   font-family: var(--source-code);
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -199,6 +220,9 @@
 
 .vela__blue {
   background-color: var(--surface--blue) !important;
+}
+.vela__blue .about__me__paragraph h3{
+  color: rgb(24, 85, 255);;
 }
 
 @media(max-width:1080px) {
