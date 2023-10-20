@@ -3,13 +3,39 @@
   height: auto;
   min-height: 100vh;
   width: 100%;
-  padding: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 20px 30px 0 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 170PX;
 }
-.container .work{
+.container .project{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-height: 500px;
+  background-color: var(--sidebar-color);
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.container .project .info__project{
+  position: absolute;
+  width: 95%;
+  height: auto;
+  min-height: 30%;
+  left: 2.5%;
+  bottom: -70px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: var(--button-color);
+}
+
+.project .img__project{
+  height: 80%;
+  width: 90%;
+}
+/* .container .work{
   overflow: hidden;
   width: 80%;
   height: auto;
@@ -18,8 +44,6 @@
   display: grid;
   border-radius: 5px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-  /* gap: 10px; */
 }
 .container .work1{
   margin-top: 15px;
@@ -140,4 +164,4 @@ color: var(--paragraph-white);
 }
 .dark .skills span{
   color: var(--paragraph-white);
-}
+} */
