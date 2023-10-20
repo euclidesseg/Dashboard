@@ -17,23 +17,27 @@
   background-color: var(--sidebar-color);
   position: relative;
   margin-bottom: 35px;
+  border-radius: 5px;
 }
 
 .container .project .info__project{
   position: absolute;
   width: 95%;
   height: auto;
-  min-height: 30%;
+  min-height: 25%;
   left: 2.5%;
-  bottom: -70px;
+  bottom: -50px;
   border-radius: 10px;
   margin: auto;
   background-color: var(--button-color);
 }
 
 .project .img__project{
+  margin-top:10px ;
   height: 80%;
+  max-height: 350px;
   width: 90%;
+  border-radius: 5px;
 }
 /* .container .work{
   overflow: hidden;
