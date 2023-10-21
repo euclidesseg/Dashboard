@@ -1,95 +1,20 @@
 <section class="container" [ngClass]="{'dark': isDarkSelect}">
 
-  <div class="project">
-    <img src="/assets/images/microservices.png" class="img__project" alt="">
-    <div class="info__project">
-      <h3 class="work__title">{{"vehicle microservice"|titlecase}}</h3>
-      <p class="paragraph"  [ngClass]="{'darkMode': isDarkSelect}">This is a microservice with spring boot that operates on a relational database.</p>
-    </div>
-  </div>
-  <div class="project">
-    <div class="info__project">
-
-    </div>
-  </div>
-  <div class="project">
-    <div class="info__project">
-
-    </div>
-  </div>
-  <div class="project">
-    <div class="info__project">
-
-    </div>
-  </div>
-  <div class="project">
-    <div class="info__project">
-
-    </div>
-  </div>
-  <div class="project">
-    <div class="info__project">
-
-    </div>
-  </div>
-
-  <!-- <div class="work work1">
-    <div class="work__image">
-
-    </div>
-    <div class="work__parragraphs">
-      <div class="texts">
-        <h2 class="work__title">User Model
-          <hr>
-        </h2>
-        <p class="paragraph"  [ngClass]="{'darkMode': isDarkSelect}">This user model is part of an exciting project where I create an API to register and query users, taking into account their country and respective department. In this project, I can venture into the wonderful world of Spring Boot, Hibernate, and JPA in a self-taught manner.
-        </p>
-        <div class="skills">
-          <span>Java</span> <span>Spring-Boot</span> <Span>JPA</Span> <Span>Hibernate</Span>
+  <div class="project" *ngFor="let project of projects" >
+    <div class="figure">
+      <img [src]="project.img" class="img__project" alt="">
+      <div class="project__links">
+        <div class="cta">
+          <a [href]="project.linkBakend" class="github__cta" *ngIf="project.linkBakend" target="_blank"><i class="pi pi-github"></i></a>
+          <a [href]="project.linkFront" class="deploy__cta" *ngIf="project.linkFront" target="_blank"><i class="pi pi-sign-in"></i></a>
         </div>
-          <a href="https://github.com/euclidesseg/apiWithSpringBootAndPostgres/tree/main/src/main/java/com/example/apiWithSpringAndPostgres"
-            target="_blank" class="github__cta"><i class="pi pi-github"></i></a>
+        <div class="skills">
+          <span *ngFor=" let skill of project.skills">{{skill | titlecase}}</span>
+        </div>
       </div>
+    </div>
+    <div class="info__project">
+      <h3 class="project__title">{{project.title | titlecase}}</h3>
+      <p class="paragraph"  [ngClass]="{'darkMode': isDarkSelect}">{{project.description}}</p>
     </div>
   </div>
-  <div class="work work2">
-    <div class="work__image">
-
-    </div>
-    <div class="work__parragraphs">
-      <div class="texts">
-
-        <h2 class="work__title">Motorcycle Service
-          <hr>
-        </h2>
-        <p class="paragraph"  [ngClass]="{'darkMode': isDarkSelect}">This motorcycle service is part of a beautiful project where I learn to communicate microservices using RestTemplate and FeignClient. It consists of three services: users, motorcycles, and cars.</p>
-          <div class="skills">
-             <Span>Hibernate</Span><span>Spring-Cloud</span> <span>RestTemplate</span> <span>FeignClient</span><span>PostgreSQL</span>
-          </div>
-        <a href="https://github.com/euclidesseg/microserviceSpringBoot" target="_blank" class="github__cta"><i
-            class="pi pi-github"></i></a>
-      </div>
-    </div>
-
-  </div>
-  <div class="work work3">
-    <div class="work__image">
-
-    </div>
-    <div class="work__parragraphs">
-      <div class="texts">
-        <h2 class="work__title">Reserva Service
-          <hr>
-        </h2>
-        <p class="paragraph"  [ngClass]="{'darkMode': isDarkSelect}"> This reservation service is part of my latest school project, where I create and consume an API using Node.js with Express and MongoDB. The API's main purpose is to store rooms and allow clients to make reservations.
-        </p>
-          <div class="skills">
-            <span>JavaScript</span> <span>Node</span> <Span>Express</Span>
-             <Span>MongoDB</Span>
-          </div>
-        <a href="https://github.com/euclidesseg/nodeJSLunes/blob/main/serverapi2023-lunes/services/ServicioReservas.js"
-          target="_blank" class="github__cta"><i class="pi pi-github"></i></a>
-      </div>
-    </div>
-  </div> -->
-</section>
