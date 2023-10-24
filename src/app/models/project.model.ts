@@ -1,6 +1,4 @@
 export interface Projects{
-  type1?:back;
-  type2?:front;
   img:string;
   title:string;
   description:string;

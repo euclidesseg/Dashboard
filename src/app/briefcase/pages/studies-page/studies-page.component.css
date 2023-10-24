@@ -35,6 +35,11 @@
   gap: 3px;
   margin: auto;
   font-family: var(--source-code);
+  box-shadow: 1px 1px 5px black;
+  padding: 10px;
+}
+ .info__card h3{
+  color: var(--button-color);
 }
 
 .info__card .aptitudes{
@@ -112,4 +117,7 @@
 }
 .darkMode .credential a{
   color: var(--paragraph-white);
+}
+.darkMode .info__card h3{
+  color: rgb(69, 151, 245) !important;
 }

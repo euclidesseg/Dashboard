@@ -40,6 +40,7 @@
   font-family: var(--roboto-mono);
   font-weight: 400;
   font-size: 15px;
+  color: darkblue;
 }
 
 .hellow .hellow__image {
@@ -208,13 +209,14 @@
 
 .about__me__paragraph p {
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  color: darkblue;
 }
 
 .about__me__paragraph h3 {
   color: var(--button-color);
   font-family: var(--source-code);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 10px;
 }
 
@@ -223,6 +225,9 @@
 }
 .vela__blue .about__me__paragraph h3{
   color: rgb(24, 85, 255);;
+}
+.vela__blue .about__me__paragraph p{
+  color: var(--sidebar-color)
 }
 
 @media(max-width:1080px) {

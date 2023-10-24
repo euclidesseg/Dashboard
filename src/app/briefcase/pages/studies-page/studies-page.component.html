@@ -1,4 +1,4 @@
-<section class="container__cards">
+<section class="container__cards"  [ngClass]="{'darkMode':darkModeSelected}">
   <div *ngFor="let studie of studies" class="card__container">
       <img [src]="studie.img" alt="" class="img__card">
     <div class="info__card" [ngClass]="{'darkMode': darkModeSelected}">
