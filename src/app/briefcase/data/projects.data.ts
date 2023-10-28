@@ -28,7 +28,7 @@ export const projects: Projects[] = [
     title:"TodoApp",
     description: "This project is one of the most beautiful that I created, with it I was able to learn the fundamentals of redux and NGRX from Angular.",
     skills:["Angular", "Redux","NGRX", "Bootstrap", "CLI", "Git Hub", "TypeScript"],
-    linkFront:"https://euclidesseg.github.io",
+    linkFront:"https://euclidesseg.github.io/App-Todo-Redux/",
     linkBakend:"https://github.com/euclidesseg/App-Todo-Redux/tree/main"
   },
   {
