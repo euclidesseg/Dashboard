@@ -33,7 +33,7 @@ export class LayoutPageComponent implements OnInit{
 
   ngOnInit(): void {
     window.addEventListener('resize', () => {
-      if (window.innerWidth < 975) {
+      if (window.innerWidth < 890) {
         this.isClose = true;
       } else {
         this.isClose = false;
