@@ -5,11 +5,16 @@
       <p>Got a question or proposal, or just want to say hello? Go ahead</p>
     </div>
     <div class="data">
-      <input type="text" class="form__input"  placeholder="your name" formControlName = "nombreempresa">
-      <span *ngIf="isInvalidControl('nombreempresa')"class="form-text text-danger">{{getControlError('nombreempresa')}}</span>
+      <div>
+        <input type="text" class="form__input"  placeholder="your name" formControlName = "nombreempresa">
+        <span *ngIf="isInvalidControl('nombreempresa')"class="form-text text-danger">{{getControlError('nombreempresa')}}</span>
+      </div>
 
-      <input type="email" class="form__input"  placeholder="email" formControlName = "email" >
-      <span class="form-text text-danger" *ngIf="isInvalidControl('email')">Invalid email format</span>
+      <div>
+
+        <input type="email" class="form__input"  placeholder="email" formControlName = "email" >
+        <span class="form-text text-danger" *ngIf="isInvalidControl('email')">Invalid email format</span>
+      </div>
     </div>
 
     <textarea class="form__input form__input--message" placeholder="message" formControlName = "message"></textarea>

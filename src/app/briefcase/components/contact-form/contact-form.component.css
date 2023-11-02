@@ -1,6 +1,6 @@
 .form {
   transition: var(--trans-03);
-  width: 60%;
+  width: 70%;
   padding: 25px;
   border-radius: 10px;
   margin: auto;
@@ -36,6 +36,7 @@
   transition: var(--trans-03);
 }
 
+
 .data {
   width: 100%;
   display: flex;
@@ -43,8 +44,20 @@
   justify-content: space-between;
 }
 
-.data .form__input {
+.data div {
   width: 40%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.data div span {
+  position: absolute;
+  bottom: -70%;
+  left: 0;
+}
+
+.data div .form__input {
+  width: 100%;
 }
 
 
@@ -62,6 +75,7 @@
   resize: none;
   padding: 1.5em 1em;
 }
+
 span {
   color: rgb(223, 107, 107);
 }
@@ -80,14 +94,14 @@ span {
   margin: 15px auto 0 auto;
 }
 
-.btn__submit{
+.btn__submit {
   position: relative;
   text-align: center;
   display: flex;
   margin: auto;
   color: rgb(238, 238, 238);
   height: 100%;
-  min-height:45px ;
+  min-height: 45px;
   width: 100%;
   display: inline;
   border: none;
@@ -96,9 +110,10 @@ span {
   z-index: 5;
 
 }
-.btn__submit::before{
+
+.btn__submit::before {
   content: "";
-  position:absolute;
+  position: absolute;
   background-color: var(--sidebar-color);
   top: 0;
   left: 0;
@@ -109,10 +124,12 @@ span {
   transition-duration: .5s;
   z-index: -1;
 }
-.btn__submit:hover{
+
+.btn__submit:hover {
   color: var(--button-color)
 }
-.btn__submit:hover::before{
+
+.btn__submit:hover::before {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
@@ -138,10 +155,14 @@ span {
   color: var(--sidebar-color);
 }
 
-@media(max-width:750px) {
-  .form__container .text__form {
-    width: 90%;
+@media(max-width:988px) {
+
+  .data div span {
+    bottom: -100%;
   }
+}
+
+@media(max-width:750px) {
 
   .form .form__container .text__form .form__title {
     font-size: 2rem;
@@ -159,10 +180,21 @@ span {
   }
 
   .data {
-    flex-direction: row;
+    flex-direction: column;
+    gap: 15px;
   }
 
-  .data .form__input {
+  .data div span {
+    position: absolute;
+    bottom: -30%;
+  }
+
+  .data div {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .data div .form__input {
     width: 100%;
     margin: 0;
     margin-bottom: 15px;
