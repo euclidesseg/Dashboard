@@ -167,8 +167,7 @@
     grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
     gap: 170PX 20px;
   }
-  .container .project{
-  }
+
 }
 .github__cta{
   overflow: hidden;
