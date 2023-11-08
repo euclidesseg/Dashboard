@@ -6,11 +6,12 @@
   padding: 20px 30px 20px 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   gap: 150PX 80px;
 }
 .container .project{
   display: flex;
+  min-height: 350px;
   justify-content: center;
   background-color: var(--sidebar-color);
   position: relative;
@@ -20,7 +21,7 @@
 .project .figure{
   position: relative;
   margin-top:10px ;
-  height: 90%;
+  height: 80%;
   width: 85%;
   display: flex;
   align-items: center;
