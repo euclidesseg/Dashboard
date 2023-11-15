@@ -3,9 +3,10 @@
   margin-top: 10px;
   height: 30px;
   width: 60px;
-  background-color: rgb(224, 217, 230);
+  background-color: var(--surface-d);
   border: none;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  box-shadow: 1px 1px 8px rgb(255, 255, 255) - 1px 1px 8px rgb(31, 203, 223);
 }

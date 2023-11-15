@@ -131,7 +131,7 @@ body {
   color: var(--text-color) !important
 }
 .notification{
-  background-color: rgb(23, 184, 233);
+  background-color: var(--button-color);
 }
 
 .cdk-overlay-container{

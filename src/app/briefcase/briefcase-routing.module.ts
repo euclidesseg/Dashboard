@@ -17,7 +17,7 @@ const routes: Routes = [
             { path:'my-projects',component:MyJobsPageComponent },
             { path:'studies',component:StudiesPageComponent },
             { path:'expereicence',component:ExperiencePageComponent },
-            { path:'hobbies',component:HobbiesPageComponent },
+            // { path:'hobbies',component:HobbiesPageComponent },
             { path:'contact',component:ContactComponent },
             { path:'**', redirectTo:'about-me',}
         ]
