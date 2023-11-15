@@ -21,8 +21,9 @@
 .project .figure{
   position: relative;
   margin-top:10px ;
-  height: 70%;
+  height: 65%;
   width: 90%;
+  top: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,6 +138,10 @@
   }
   .container .project{
     min-height: 300px;
+  }
+  .project .figure{
+    height: 70%;
+    top: 0px;
   }
 
   .figure .project__links{
