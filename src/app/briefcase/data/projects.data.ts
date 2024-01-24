@@ -45,4 +45,12 @@ export const projects: Projects[] = [
     skills:["Express", "Node", "Javascript","Mongodb"],
     linkBakend:"https://github.com/euclidesseg/backendexpres"
   },
+
+  {
+    img:"/assets/images/proyectogasto.png",
+    title:"Expenses Generator",
+    description: "This project is an expense generator that adds and removes expenses based on a given budget, implements object-oriented programming (hashtag#POO) in JS.",
+    skills:["JavaScript", "POO", "HTML","CSS"],
+    linkFront:"https://gastos-gamma.vercel.app"
+  }
  ]

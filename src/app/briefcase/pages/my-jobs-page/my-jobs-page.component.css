@@ -1,5 +1,4 @@
-
-.container{
+.container {
   height: auto;
   min-height: 100vh;
   width: 100%;
@@ -9,18 +8,20 @@
   grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   gap: 150PX 80px;
 }
-.container .project{
+
+.container .project {
   display: flex;
-  min-height: 380px;
+  min-height: 300px;
   justify-content: center;
   background-color: var(--sidebar-color);
   position: relative;
   margin-bottom: 55px;
   border-radius: 5px;
 }
-.project .figure{
+
+.project .figure {
   position: relative;
-  margin-top:10px ;
+  margin-top: 10px;
   height: 65%;
   width: 90%;
   top: 15px;
@@ -31,12 +32,15 @@
   transition: opacity 1s;
 }
 
-.figure .img__project{
-  height: 100%;
+.figure .img__project {
   width: 100%;
+  max-width: 250px;
+  height: 100%;
+  max-height: 200px;
   border-radius: 5px;
 }
-.figure .project__links{
+
+.figure .project__links {
   position: absolute;
   z-index: 1;
   height: 100%;
@@ -49,11 +53,12 @@
   background-color: rgb(5, 17, 58);
   opacity: 0;
   transition-property: opacity, box-shadow;
-  transition-duration:  .8s;
+  transition-duration: .8s;
 
 }
 
-.project__links .cta, .skills{
+.project__links .cta,
+.skills {
   position: relative;
   z-index: 100;
   width: 90%;
@@ -62,7 +67,8 @@
   opacity: 1 !important;
   gap: 5px;
 }
-.project__links .cta{
+
+.project__links .cta {
   width: 50%;
   height: 30%;
   display: flex;
@@ -72,27 +78,31 @@
   gap: 10px;
 }
 
-.cta .github__cta, .deploy__cta{
+.cta .github__cta,
+.deploy__cta {
   width: auto;
   min-width: 50px;
   min-height: 40px;
   padding: 5px;
   cursor: pointer;
 }
-.cta i{
+
+.cta i {
   font-size: 1.5rem;
   color: white;
   bottom: 15px;
 }
-.project__links .skills{
+
+.project__links .skills {
   width: 100%;
-  height: 70%                     ;
+  height: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.skills span{
+
+.skills span {
   color: var(--sidebar-color);
   padding: 7px 5px 0px 5px;
   font-size: 11px;
@@ -106,12 +116,13 @@
   margin-right: 10px;
   border-radius: 15px;
 }
-.figure .project__links:hover{
+
+.figure .project__links:hover {
   opacity: .8;
   box-shadow: 0px 0px 10px rgb(1, 1, 49);
 }
 
-.container .project .info__project{
+.container .project .info__project {
   position: absolute;
   width: 95%;
   height: auto;
@@ -124,50 +135,58 @@
   background-color: var(--bodi-color);
 }
 
-.info__project .project__title{
+.info__project .project__title {
   margin-bottom: 10px;
   color: var(--button-color);
 }
-.info__project .paragraph{
+
+.info__project .paragraph {
   color: darkblue;
 }
 
 @media screen and (min-width:560px) {
-  .container{
-   padding: 20px 10% 20px 10%;
+  .container {
+    padding: 20px 10% 20px 10%;
   }
-  .container .project{
+
+  .container .project {
     min-height: 300px;
   }
-  .project .figure{
+
+  .project .figure {
     height: 70%;
     top: 0px;
   }
 
-  .figure .project__links{
+  .figure .project__links {
     height: 100%;
   }
 }
+
 @media screen and (min-width:650px) {
-  .container{
-   padding: 20px 15% 20px 15%;
+  .container {
+    padding: 20px 15% 20px 15%;
   }
-  .project .figure{
+
+  .project .figure {
     height: 75%;
   }
-  .container .project .info__project{
+
+  .container .project .info__project {
     top: 85%;
   }
 }
+
 @media screen and (min-width:854px) {
-  .container{
+  .container {
     padding: 20px 5% 20px 5%;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 170PX 40px;
   }
 }
+
 @media screen and (min-width:1400px) {
-  .container{
+  .container {
     padding: 20px 5% 20px 5%;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
@@ -175,18 +194,23 @@
   }
 
 }
-.github__cta{
+
+.github__cta {
   overflow: hidden;
 }
-.dark .project{
+
+.dark .project {
   background-color: var(--surface--blue);
 }
-.dark .project .info__project{
+
+.dark .project .info__project {
   background-color: var(--body-ground);
 }
-.dark .project .info__project .project__title{
+
+.dark .project .info__project .project__title {
   color: rgb(119, 153, 248);
 }
-.dark .project .info__project .paragraph{
+
+.dark .project .info__project .paragraph {
   color: var(--sidebar-color);
 }
