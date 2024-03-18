@@ -19,7 +19,7 @@ export const experiences:Experiences[] = [
     skills:['Direct collaboration with the development team to analyze customer requirements.',
       'Effective coding of software changes and alterations based on specific design specifications.',
       'Handling web requests, RxJs operators for data transformation.',
-      'Generation of report graphs for budget and plant production during the current project.'],
+      'Generation of report graphs for budget and plant production during the project.'],
   },
   {
     img:'https://firebasestorage.googleapis.com/v0/b/portfolio-898c3.appspot.com/o/Intecol.jpg?alt=media&token=e253f345-bf7f-4af6-8144-38e120e4c46e',
